@@ -39,7 +39,7 @@
 
 5. On your IDE e.g., VS Code, the folder structure looks like this:
 
-    ![create-react-app Folder Structure on VS Code]()
+    ![create-react-app Folder Structure on VS Code](/images/2023-07-20-create-react-app-folder-structure.png)
 
 # create-react-app Folder Structure
 1. `node_modules`
