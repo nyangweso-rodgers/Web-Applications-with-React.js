@@ -58,7 +58,7 @@
 # Vite `my-app` Folder Structure
 * Opening our project in VS Code, the folder structure of the app will appear as in the image below which is almost similar to the CRA folder structure:
 
-    ![my-app Vite Folder Structure]()
+    ![my-app Vite Folder Structure](/images/2023-07-20-vite-folder-structure.png)
 
 * __NOTE__:
     - In Vite's folder structure, some files (which are not so-used files but can be added manually if need be) like the test files are not generated.
