@@ -2,12 +2,7 @@
 
 ## Table of Contents
 - [Further Reading]()
-    1. [Learn React by Building an eCommerce Site](https://www.freecodecamp.org/news/learn-react-by-building-an-ecommerce-site/)
-    2. [W3 Schools - React Tutorial](https://www.w3schools.com/react/default.asp)
-    3. [React Tutorial](https://react-tutorial.app/app.html)
-    4. [Learn React](https://reactjs.org/)
-    5. [React Tutorial](https://react-tutorial.app/app.html)
-    6. [React JavaScript Framework for Beginners – Project-Based Course](https://www.youtube.com/watch?v=u6gSSpfsoOQ&t=35s)
+  - []()
 
 # Introduction to `ReactJS`
 * `React` is a `JavaScript library` used to build _User Interfaces_. 
@@ -37,35 +32,12 @@
 * Netflix
 * Twitter
 
-# ReactJS Concepts
+# `ReactJS` Concepts
 
 # Concept 1: Virtual DOM
 * __Virtual DOM__: uses a strategy that updates the `DOM` without having to redraw all the webpage elements. Every time the `DOM` changes, browsers need to recalculate entire layout and then repaint the web page which makes the web app slow. To overcome this, we have __virtual DOM__. Evrey time the state of our application changes, the __virtual DOM__ gets updates instead of the real `DOM`.
 
 * Whenever the new element is added to the UI, a new __virtual DOM__ associated with that element is created. If state of this element chnages, a second new __virtual DOM__ is created which will be compared with the previous __virtual DOM__. It then updates ONLY the object on the real `DOM`.
-
-# Concept 2: JavaScrip XML (JSX)
-* `JSX`: an extension of `JavaScript` which allow us to write `HTML` code in `JavaScript` file. E.g., consider the below variable declaration. It's neither `JS` nor `HTML`. This is the mixture of `JavaScript` + `XML` = `JSX`. It is not necessary to work with `JSX`, but is recommended as it makes the code easier to understand.
-
-
-    ```js
-        cons element = <h1>Hello, World!</h1>
-    ```
-* Why use `JSX`?
-  * As it basically helps us write `HTML` tags inside `JS`, which ultimately makes __React__ faster.
-  * JSX makes the code easier to understand and visually attractive.
-
-    ```js
-        class Hey extends React.Component {
-            render(){
-                return <div> Hello {this.props.iDontKnow}</div>;
-            }
-        }
-        ReactDOM.render{
-            <Hey iDontKnow="World"/>,
-            document.getElementById('root')
-        };
-    ```
 
 # Data Flow in `ReactJS`
 * In `React`, data flow refers to how data is passed between `components`. 
