@@ -1,4 +1,4 @@
-# ReactJS - Getting Started
+# `ReactJS` - Getting Started
 
 ## Table of Contents
 - [Further Reading]()
@@ -67,23 +67,9 @@
         };
     ```
 
-# Concept 3: React Components
-* `components` - simple function that you can call with some input and they render some output.
-* `components` are of two types:
-  * __Class Based Component__: are defined using `ES6` classes.
-  * __Function Based Component__: are basic `JavaScript` functions. A _Typical Function Component in React_ is as below:
-
-    ```js
-        import React from "react" // way of telling Babel that we are working with JSX filed so that it will not throw error while transforming code into the React.createElement calls
-        
-        '''
-        Below id a React function component:
-        This is quite similar to typical JavaScript functions. The only difference is, here we are returning HTML code because this is JSX(JavaScript XML)
-        '''
-        function componentName() {
-            return {
-                <h1>I am a function component</h1>
-            }
-
-        export default componentName; // Exporting the function (component) so that we can use it outside
-    ```
+# Data Flow in `ReactJS`
+* In `React`, data flow refers to how data is passed between `components`. 
+* `React` employs a __one-way data flow__ or __unidirectional data flow__. It is sometimes referred to as the __one-way data binding model__.
+* In a __unidirectional data flow__, data flows in a single direction, which is from a parent component down to its child components. 
+* In `React`, this is achieved by passing data down through `props` _which are essential properties that can be passed down from a parent component to its child components._. Once a child component receives `props` from its parent, it can use those `props` to render itself.
+* This __unidirectional flow__ of data helps to keep the application's data model simple and also makes it easier to debug the application, as changes to data can be easily traced back to their source.
