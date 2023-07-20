@@ -1,4 +1,4 @@
-# React Fundamentals
+# Fundamentals of `ReactJS`
 
 ## Table Of Contents
 - [React JSX]()
