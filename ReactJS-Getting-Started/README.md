@@ -69,3 +69,11 @@ Language used | `AngularJS` uses Typescript which requires a bit of prior learni
 * In a __unidirectional data flow__, data flows in a single direction, which is from a parent component down to its child components. 
 * In `React`, this is achieved by passing data down through `props` _which are essential properties that can be passed down from a parent component to its child components._. Once a child component receives `props` from its parent, it can use those `props` to render itself.
 * This __unidirectional flow__ of data helps to keep the application's data model simple and also makes it easier to debug the application, as changes to data can be easily traced back to their source.
+
+# `ReactJS` Frameworks
+# Framework 1: `NextJS`
+* `Next.js` is a framework for building server-side rendered React apps, making it suitable for generating quick and dynamic web applications.
+* It's significant for web app development because it helps with things like:
+  * page routing, 
+  * server-side rendering, and 
+  * quick loading times, which are critical for generating a great user experience.
