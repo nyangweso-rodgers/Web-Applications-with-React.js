@@ -13,6 +13,27 @@
 # Requirements
 
 ## VS Code Extensions
+1. [LiveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+
+# `ReactJS` UI Frameworks
+1. [Material UI](https://mui.com/material-ui/)
+2. [React-Bootstrap](https://react-bootstrap.github.io/docs/getting-started/introduction/)
+3. [React-Foundation](https://get.foundation/)
+4. [React Toolbox](https://react-toolbox.com/)
+
+# How to Host React Apps for Free
+1. Netlify
+   - Used to create, test and deploy websites 
+2. Vercel
+   - Static site
+3. GitHub Pages
+4. Firebase Hosting
+   - Hosting for static and dynamic content as well as microservices
+   - Offers SSD storage
+   - CDN
+
+5. Surge
+6. Heroku
 
 # `package.json` File
 * The `package.json` file  is a crucial part of a `Node.js` or `npm-based` project, including `React` projects created with `create-react-app` or `pnpm create vite@latest`. It contains important information about your project, such as its `name`, `version`, `dependencies`, and `scripts`.
