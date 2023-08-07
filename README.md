@@ -8,14 +8,13 @@
       2. [nextjs toolchain]()
       3. [vite toolchain]()
 - [Further Reading]()
-  1. [react.dev](https://react.dev/learn)
+  1. [react.dev/learn](https://react.dev/learn)
   2. [freeCodeCamp - Learn React by Building a Mortgage Calculator](https://www.freecodecamp.org/news/react-mortgage-calculator-tutorial-for-beginners/)
   3. [freeCodeCamp - Learn React by Building an eCommerce Site](https://www.freecodecamp.org/news/learn-react-by-building-an-ecommerce-site/)
   4. [Hashnode - 7 Best Practices for Keeping a React Project Clean and Efficient](https://theankurtyagi.hashnode.dev/7-best-practices-for-keeping-a-react-project-clean-and-efficient)
   5. [freeCodeCamp - How to Write Unit Tests in React](https://www.freecodecamp.org/news/how-to-write-unit-tests-in-react/)
 
-# Setting RectJS Development Environment in VSCode
-# Requirements
+# Project Requirements
 
 ## Requirements: Chrome Extension for `ReactJS` Development
 1. [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
@@ -45,3 +44,8 @@
 
 5. Surge
 6. Heroku
+
+# Unit Testing with `Jest`
+```sh
+   npm test
+```
