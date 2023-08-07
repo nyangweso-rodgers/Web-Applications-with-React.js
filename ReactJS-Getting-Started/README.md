@@ -1,9 +1,6 @@
 # `ReactJS` - Getting Started
 
 ## Table of Contents
-- []()
-- [Further Reading]()
-  - []()
 
 # Library vs. Frameworks
 * A __library__ and a __framework__ are similar in that they are both _collections of pre-written code that can be used to add functionality to a software application_. However, there are some key differences between the two:
@@ -63,37 +60,9 @@ Language used | `AngularJS` uses Typescript which requires a bit of prior learni
 
 * Whenever the new element is added to the UI, a new __virtual DOM__ associated with that element is created. If state of this element chnages, a second new __virtual DOM__ is created which will be compared with the previous __virtual DOM__. It then updates ONLY the object on the real `DOM`.
 
-# Feature 2: JavaScript XML or JSX
-* `JSX` is a syntax extension to `JavaScript` used by `React` used to write `HTML` tags inside `JavaScript`. The `JSX` code will be later translated into normal `JavaScript`.
-
-* `React` doesn’t have `HTML` files, `HTML` tags are rendered directly inside `JavaScript`. This approach makes `React` faster.
-
-# Feature 3: Components
-
-
 # Feature 4: Unidirectional Data Flow in `ReactJS`
 * In `React`, data flow refers to how data is passed between `components`. 
 * `React` employs a __one-way data flow__ or __unidirectional data flow__. It is sometimes referred to as the __one-way data binding model__.
 * In a __unidirectional data flow__, data flows in a single direction, which is from a parent component down to its child components. 
 * In `React`, this is achieved by passing data down through `props` _which are essential properties that can be passed down from a parent component to its child components._. Once a child component receives `props` from its parent, it can use those `props` to render itself.
 * This __unidirectional flow__ of data helps to keep the application's data model simple and also makes it easier to debug the application, as changes to data can be easily traced back to their source.
-
-# Feature 5: Props
-* Props (short for properties) are a way for us to pass data from one component to another. These properties are read-only.
-* E,g.,
-
-  ```jsx
-      function Hello(props) {
-        return <h1>Hello, {props.name}</h1>
-      }
-
-      function App() {
-        return (
-          <div>
-            <Hello name="Rodgers" />
-            <Hello name="Omondi" />
-            <Hello name="Nyangweso" />
-          </div>
-        )
-      }
-  ```
