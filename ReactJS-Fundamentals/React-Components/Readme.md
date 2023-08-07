@@ -79,6 +79,22 @@
 
 # Class Based Components
 
-# Passing props to a component
-* `React components` use `props` to communicate with each other. Every parent component can pass some information to its child components by giving them `props`.
+# Passing `props` to a component
+* `React components` use `props` (short for properties) to communicate with each other. These properties are read-only. Every parent component can pass some information to its child components by giving them `props`.
 * `Props` might remind you of `HTML` `attributes`, but you can pass any `JavaScript` value through them, including `objects`, `arrays`, `functions`, and even `JSX`!
+* E,g.,
+  ```jsx
+      function Hello(props) {
+        return <h1>Hello, {props.name}</h1>
+      }
+
+      function App() {
+        return (
+          <div>
+            <Hello name="Rodgers" />
+            <Hello name="Omondi" />
+            <Hello name="Nyangweso" />
+          </div>
+        )
+      }
+  ```
