@@ -6,6 +6,7 @@
     2. [oneline converter](https://transform.tools/html-to-jsx)
 
 # `JSX`
+* `React` doesn’t have `HTML` files, `HTML` tags are rendered directly inside `JavaScript`. This approach makes `React` faster.
 * Most React projects use `JSX` for its convenience.
 * `JSX` is stricter than `HTML:`
     -  You have to close tags like `<br />`. 
