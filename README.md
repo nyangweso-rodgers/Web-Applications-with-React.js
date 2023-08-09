@@ -24,6 +24,7 @@
 2. [Simple React Snippets](https://marketplace.visualstudio.com/items?itemName=burkeholland.simple-react-snippets)
 3. [Debugger for Chrome](https://code.visualstudio.com/blogs/2016/02/23/introducing-chrome-debugger-for-vs-code)
 4. [JavaScript Debigger (Nightly)](https://learn.microsoft.com/en-us/visualstudio/javascript/debug-nodejs?view=vs-2022)
+5. [Prettier](https://prettier.io/)
 
 # Requirements: `ReactJS` UI Frameworks
 1. [Material UI](https://mui.com/material-ui/)
