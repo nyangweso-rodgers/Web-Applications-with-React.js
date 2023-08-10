@@ -3,6 +3,7 @@
 ## Table Of Contents
 - [Further Reading]()
     1. [Create React App - Official Documentation](https://create-react-app.dev/)
+    2. [react.dev/learn](https://react.dev/learn)
 
 # What is CRA?
 * __CRA__ is an officially supported way to __create single-page React applications__. It offers a modern build setup with no configuration.
