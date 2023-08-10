@@ -11,7 +11,9 @@ const Blog = () => {
                 <div className='row border p-5'></div>
             </div>
             <div className='row border'>
-                <button className='btn btn-lg btn-primary'>Learn More</button>
+                <div className="col">
+                    <button className='btn btn-lg btn-primary'>Learn More</button>
+                </div>
             </div>
         </section>
     )

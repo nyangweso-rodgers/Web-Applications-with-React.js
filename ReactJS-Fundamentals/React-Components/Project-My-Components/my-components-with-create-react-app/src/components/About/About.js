@@ -3,7 +3,7 @@ import './About.css';
 
 const About = () => {
     return (
-        <section className="section about-section border border-secondary">
+        <section id='myAboutSection' className="section about-section border border-secondary">
             <div className="container">
                 <div className='row border'>
                     <h3>About Rodgers Nyangweso</h3>
