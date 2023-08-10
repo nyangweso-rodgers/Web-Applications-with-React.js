@@ -48,6 +48,8 @@
 * It's also common to also handle any logic in the application, as well as changes to the application state.
 * A `component` that does more than just rendering a piece of UIs is also known as `stateful component` or a `smart component`
 
+### Step 3: Create `images` Folder inside `public/` folder
+
 
 # Task 1: Create a `HeaderSection` and `AboutSction` Component with `Bootstrap5`
 ```js
