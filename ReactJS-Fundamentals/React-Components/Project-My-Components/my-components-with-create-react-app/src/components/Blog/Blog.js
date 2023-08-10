@@ -12,7 +12,7 @@ const Blog = () => {
             </div>
             <div className='row border'>
                 <div className="col">
-                    <button className='btn btn-lg btn-primary'>Learn More</button>
+                    <button className='btn btn-lg btn-primary'>More Articles</button>
                 </div>
             </div>
         </section>
