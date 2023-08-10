@@ -7,7 +7,7 @@
 
 
 # What is Vite?
-* [Vite](https://vitejs.dev/) like [CRA](https://create-react-app.dev/) is a build tool that is designed to be fast and optimized for modern web development workflows.  It too generates a new React site for us along with all of the configuration and dependencies it needs to run hence doing all the heavy lifting for us as well.
+* [Vite](https://vitejs.dev/) like [CRA](https://create-react-app.dev/) is a build tool that is designed to be fast and optimized for modern web development workflows.  It too generates a new `React` site for us along with all of the `configuration` and `dependencies` it needs to run hence doing all the heavy lifting for us as well.
 
 # Advantages of Vite
 1. _Speed_ - Vite is blazingly fast as compared to CRA. This is because it uses a new generation of build tooling that leverages modern JavaScript features hence significantly reducing the time it takes to build and reload your app during development, as compared to CRA which uses a more traditional build process that is slower, especially for larger applications.
