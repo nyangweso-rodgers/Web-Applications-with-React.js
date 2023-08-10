@@ -50,3 +50,11 @@
 ```sh
    npm test
 ```
+
+# Testing with `React`
+1. Unit testing
+2. Integration tests
+3. Performance tests
+4. Usability tests
+5. Acceptance tests
+6. Regression tests
