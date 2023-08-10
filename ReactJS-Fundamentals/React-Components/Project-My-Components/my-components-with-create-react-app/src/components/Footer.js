@@ -5,9 +5,11 @@ import './Footer.css';
 
 const Footer = () => {
     return (
-        <section className="container">
-            <div className='row'>
+        <section className="section footer-section border border-danger">
+            <div className='container'>
+                <div className='row'>
                 <h2>Footer Section!</h2>
+                </div>
             </div>
         </section>
     )
