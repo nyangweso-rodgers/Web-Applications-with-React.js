@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MyHeader = () => {
+const HeaderForMyWebPageApp = () => {
     return (
         <header className="">
             <nav className="navbar navbar-expand-sm sticky-top">
@@ -12,4 +12,4 @@ const MyHeader = () => {
     )
 };
 
-export default MyHeader;
+export default HeaderForMyWebPageApp;
