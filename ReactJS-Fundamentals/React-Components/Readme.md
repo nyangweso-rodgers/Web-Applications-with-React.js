@@ -9,75 +9,50 @@
 
 
 # `React Components`
-* `Components` are one of the core concepts of `React`. They are the foundation upon which you build user interfaces (UI), which makes them the perfect place to start your `React` journey!
-* `React components` are `js functions` that return `markup` which can be as small as a `button`, or as large as an entire page.
-* Example: _create a submit button component_
+* `Components`  are the foundation upon which you build UI. `React components` are `js functions` that return `markup` which can be as small as a `button`, or as large as an entire page.
+* Example: 
+  * create a submit `button` component
     ```js
+        // create a submit button component
         const SubmitButton = () => {
             return (
                 <button>Submit</button>
             );
         }
     ```
-* After `SubmitButton` as been declared, we can nest it into another `component`:
-    ```js
-        // nest the SubmitButton into another component
-        export default function MyApp() {
-            return (
-                <div>
-                    <h1>Some header title!</h1>
-                    <SubmitButton />
-                </div>
-            )
-        }
+  * After `SubmitButton` as been declared, we can nest it into another `component`:
+      ```js
+          // nest the SubmitButton into another component
+          export default function MyApp() {
+              return (
+                  <div>
+                      <h1>Some header title!</h1>
+                      <SubmitButton />
+                  </div>
+              )
+          }
     ```
 * __Note__:
     - `<SubmitButton />` starts with a capital letter. That’s how you know it’s a `React component`
     - `React component` names must always start with a capital letter, while `HTML` tags must be lowercase.
-    - The `export default` keywords specify the main component in the file
+    - The `export default` keywords specify the main component in the file.
 
-
-
-
-
-* Each component has 3 distinct characteristics:
-    1. `state`
-    2. `props`
-    3. `Render()`
 * To use `Component` with `JSX`, you must import them and then use them as an element in your `JSX` code. This allows you to reuse the component multiple times within your project.
     ```jsx
+        // import Component
         import ExampleComponent from './ExampleComponent';
         const element = <ExampleComponent />
     ```
-* __React Components__ is a `js function` that takes an object of arbitrary inputs known as `props` and returns React elements describing what should be rendered on the UI.
-
-    ```js
-        // simple React component
-        function ReactHeader(props) {
-            return <h1>React {props.version} Documentation</h1>
-        };
-    ```
-* Remarks:
-    * This code snippet defines a very simple `ReactHeader` component that renders a `h1` element containing a heading for the documentation of a specified `React` version. It uses the `JSX` syntax for creating the `DOM` elements hierarchy of the component in a declarative way.
-    * By passing data to a `component` via `props`, you can make the `component` more flexible and reusable. This allows you to use the same `component` in different contexts with different data.
 
 
-# Function Components
-* Example:
-  * Create a `Users.js` component
+# Characteristics of React Component
+* Each component has 3 distinct characteristics:
+    1. `state`: 
+    2. `props`: By passing data to a `component` via `props`, you can make the `component` more flexible and reusable. This allows you to use the same `component` in different contexts with different data.
+    3. `Render()`
 
-    ```js
-        import React from 'react';
 
-        const Users = () => {
-            return (
-                <div>
-                    <h1>Some Header Title!</h1>
-                    <p>Some paragraph goes here.</p>
-                </div>
-            )
-        }
-    ```
+
 
 # Passing `props` to a component
 * `React components` use `props` (short for properties) to communicate with each other. These properties are read-only. 
@@ -99,7 +74,7 @@
         )
       }
   ```
-* `React` __Components__ written as functions are known as __Functional Components__. While the __ES6 components__ are known as __Class Components__.
+  
 # `PropTypes`
 * `PropTypes` are used to make sure the values passed through `props` are valid.
 * `PropTypes` includes `props` and their respective `PropTypes` for type checking.
