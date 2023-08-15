@@ -14,7 +14,7 @@
 
 # Introduction to `NextJS`
 * `NextJS` is a `React` Framework that enables:
-    1. Server-side rendering
+    1. Server-side rendering (SSR)
     2. Additional server-side functionality
     3. An improved development and deployment toolchain
 
