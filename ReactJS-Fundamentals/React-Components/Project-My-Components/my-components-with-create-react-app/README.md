@@ -1,4 +1,4 @@
-# Project: Creating Components using `create-react-app` Toolchain
+# Project: Creating `React` Components using `create-react-app` Toolchain
 
 ## Table Of Contents
 - [Further Reading]()
