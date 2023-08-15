@@ -3,3 +3,17 @@
     line-height: 1.8;
     text-align: center;
 }
+
+.navbar {
+    top: 0;
+    left: 0;
+    padding: 20px 0;
+    background-color: #333;
+    /*background-color: #0A2647;*/
+   
+    /*width: 100%;*/
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
