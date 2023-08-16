@@ -3,7 +3,7 @@
 ## Table Of Contents
 - [Further Reading]()
     1. [create-react-app.dev/docs](https://create-react-app.dev/docs/getting-started)
-    2. []()
+    2. [freeCodeCamp - A Better Way to Structure React Projects](https://www.freecodecamp.org/news/a-better-way-to-structure-react-projects/?utm_source=hashnode&utm_medium=hashnode+rix&utm_campaign=rix_chatbot_answer)
 
 # Setting Up a Development Environment with `create-react-app` Toolchain
 * Install `create-react-app` globally
