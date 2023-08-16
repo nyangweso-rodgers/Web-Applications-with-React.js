@@ -3,11 +3,9 @@
 ## Table Of Contents
 - [Further Reading]()
     1. [create-react-app.dev/docs](https://create-react-app.dev/docs/getting-started)
+    2. []()
 
-# Requirements
-
-## Setting Up a Development Environment
-### `create-react-app`
+# Setting Up a Development Environment with `create-react-app` Toolchain
 * Install `create-react-app` globally
     ```sh
         # globally install create-react-app
@@ -23,7 +21,9 @@
     # with npx
     npx create-react-app my-components-with-create-react-app
 ```
-## Requirements: Adding `Bootstrap5`
+
+# Requirements
+## Requirements 1: Adding `Bootstrap5`
 * Integrate `Bootstrap5` into `React`:
 
     ```sh
@@ -37,32 +37,7 @@
         // Put any other imports below so that CSS from your
         // components takes precedence over default styles.
     ```
-## Structuring Component Files
-* In `React` it's common practice to classify `components` into:
-  * `containers`
-  * `components`
-### Step 1: Create `components` folder inside the `/src/`
-* For having a `stateless component`
-### Step 2: Create `containers` folder inside the `/src/` folder
-* `containers` is created to hold other components.
-* It's also common to also handle any logic in the application, as well as changes to the application state.
-* A `component` that does more than just rendering a piece of UIs is also known as `stateful component` or a `smart component`
-
-### Step 3: Create `images` Folder inside `public/` folder
-
-
-# Task 1: Create a `HeaderSection` and `AboutSction` Component with `Bootstrap5`
-```js
-    // App.js
-    const MyHeader = () => {
-        return <div>First component header!</div>
-    }
-
-    export default MyHeader;
-```
-
-# Task 2: Create a `AboutSection` Component
-
-# Task 3: Create a `PortableSection` Component
-
-# Task 4: Create a `FooterSection` Component
+# Structuring The Project Folder
+* The structure is organized into an `src` the directory containing the React app's source code. Which has:
+  * `src/components/` containing the React components for the app.
+  * `src/styles`  contains CSS styles.
