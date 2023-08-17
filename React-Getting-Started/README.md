@@ -60,9 +60,22 @@ Language used | `AngularJS` uses Typescript which requires a bit of prior learni
 
 * Whenever the new element is added to the UI, a new __virtual DOM__ associated with that element is created. If state of this element chnages, a second new __virtual DOM__ is created which will be compared with the previous __virtual DOM__. It then updates ONLY the object on the real `DOM`.
 
-# Feature 4: Unidirectional Data Flow in `ReactJS`
+# Feature 2: Unidirectional Data Flow in `ReactJS`
 * In `React`, data flow refers to how data is passed between `components`. 
 * `React` employs a __one-way data flow__ or __unidirectional data flow__. It is sometimes referred to as the __one-way data binding model__.
 * In a __unidirectional data flow__, data flows in a single direction, which is from a parent component down to its child components. 
 * In `React`, this is achieved by passing data down through `props` _which are essential properties that can be passed down from a parent component to its child components._. Once a child component receives `props` from its parent, it can use those `props` to render itself.
 * This __unidirectional flow__ of data helps to keep the application's data model simple and also makes it easier to debug the application, as changes to data can be easily traced back to their source.
+
+# webpack
+* __webpack__ is a static module bundler for modern JavaScript applications.
+* webpack build script inside a `package.json` file
+  ```json
+        "scripts": {
+            "build": "webpack --mode production"
+        }
+  ```
+* A webpack loader takes something as the input and produces an output, called bundle.
+
+# Babel
+* __Babel__ is a JavaScript transpiler that converts edge JavaScript into plain old ES5 JavaScript that can run in any browser (even the old ones).
