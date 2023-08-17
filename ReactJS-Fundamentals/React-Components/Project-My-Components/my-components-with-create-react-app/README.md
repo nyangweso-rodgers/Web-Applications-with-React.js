@@ -41,3 +41,7 @@
 * The structure is organized into an `src` the directory containing the React app's source code. Which has:
   * `src/components/` containing the React components for the app.
   * `src/styles`  contains CSS styles.
+
+# Lists of Components
+1. `Counter`
+    - For a counter application.
