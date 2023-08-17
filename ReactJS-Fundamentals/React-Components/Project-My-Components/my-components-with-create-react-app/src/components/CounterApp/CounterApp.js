@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Counter = (props) => {
+const CounterApp = (props) => {
     // Initial state value is 0
     const [count, setCount] = useState(0)
 
@@ -44,4 +44,4 @@ const Counter = (props) => {
 };
 
 
-export default Counter;
+export default CounterApp;
