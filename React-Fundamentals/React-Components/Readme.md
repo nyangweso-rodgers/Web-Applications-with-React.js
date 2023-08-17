@@ -410,3 +410,5 @@
     ```
 
 # Unmounting & Remounting `React Components` 
+
+# Implementing Event Handlers
