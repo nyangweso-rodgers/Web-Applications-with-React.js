@@ -15,21 +15,31 @@ const Counter = (props) => {
     };
 
     return (
-        <div className='container border p-5'>
-            <div className='row'>
-                <h2>Counter Application Component!</h2>
-            </div>
-            <div className='row border p-5'>
-                <button className='btn btn-primary btn-lg' onClick={handleDecrement}>-</button>
-                <h4>Count is: {count}</h4>
-                <button className='btn btn-secondary' onClick={handleIncrement}>+</button>
-            </div>
-            <div className='row border p-2'>
-                <div className='col'>
-                    <button className='btn btn-lg btn-success' onClick={() => setCount(0)}>Reset</button>
+        <>
+            <section>
+                <header>
+                    <nav className='navbar navbar-expand-md bg-dark navbar-dark'>
+                        <div className='container'>
+                            <span className='navbar-text'>Counter Application Component</span>
+                        </div>
+                    </nav>
+                </header>
+            </section>
+            <section className='mt-3'>
+                <div className='container'>
+                    <div className='row'>
+                        <button className='btn btn-primary btn-lg' onClick={handleDecrement}>-</button>
+                        <h4>Count is: {count}</h4>
+                        <button className='btn btn-secondary' onClick={handleIncrement}>+</button>
+                    </div>
+                    <div className='row mt-3'>
+                        <div className='col'>
+                            <button className='btn btn-lg btn-success' onClick={() => setCount(0)}>Reset</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </>
     )
 };
 
