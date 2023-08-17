@@ -1,30 +1,19 @@
 import React from "react";
 import './App.css';
-import HeaderForMyWebPageApp from './components/HeaderForMyWebApp/HeaderForMyWebPageApp';
-import HeaderForSurveyApp from './components/HeaderForSurveyApp/HeaderForSurveyApp';
-import Counter from "./components/Counter/Counter";
-//import About from "./components/About/About";
-//import Portfolio from "./components/Portfolio/Portfolio";
-//import Blog from "./components/Blog/Blog";
-//import Footer from "./components/Footer/Footer";
-import SurveyBodyForMarketPricing from "./components/SurveyBodyForMarketPricing/SurveyBodyForMarketPricing"
+import WebsiteHeader from './components/Headers/WebsiteHeader/WebsiteHeader'
+import MarketSurveyForm from './components/Forms/MarketSurveyForm/MarketSurveyForm';
 
 const App = () => {
 
     // set the conditions for rendering various components
-    const shouldRenderHeaderForMyWebPageApp = false;
-    const shouldRenderHeaderForSurveyApp = true;
-    const shouldRenderCounter = false;
-    const shouldRenderSurveyBodyForMarketPricing = true;
-
+    const shouldRenderWebsiteHeader = true;
+    const shouldRenderMarketSurveyForm = false;
 
     return (
         <div className="app">
             {/* Conditional Rendering for SurveyHeader */}
-            {shouldRenderHeaderForSurveyApp && <HeaderForSurveyApp />}
-            {shouldRenderHeaderForMyWebPageApp && <HeaderForMyWebPageApp />}
-            {shouldRenderCounter && <Counter />}
-            {shouldRenderSurveyBodyForMarketPricing && <SurveyBodyForMarketPricing />}
+            {shouldRenderWebsiteHeader && <WebsiteHeader />}
+            {shouldRenderMarketSurveyForm && <MarketSurveyForm />}
         </div>
     )
 };
