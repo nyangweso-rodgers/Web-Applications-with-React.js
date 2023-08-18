@@ -1,9 +1,11 @@
-# `NextJS` Toolchain
+# `Next.js` Toolchain
 
 ## Table Of Contents
 - [Further Reading]()
-    1. [dev.to - How to build and deploy a modern-day Next.js application](https://dev.to/livecycle/how-to-build-and-deploy-a-modern-day-nextjs-application-mgn)
-    2. [freeCodeCamp - How to Build a Full Stack App with Next.js 13 and Firebase](https://www.freecodecamp.org/news/create-full-stack-app-with-nextjs13-and-firebase/)
+    1. [nextjs.org/docs](https://nextjs.org/docs)
+    2. [nextjs.org/learn/foundation](https://nextjs.org/learn/foundations/about-nextjs)
+    3. [dev.to - How to build and deploy a modern-day Next.js application](https://dev.to/livecycle/how-to-build-and-deploy-a-modern-day-nextjs-application-mgn)
+    4. [freeCodeCamp - How to Build a Full Stack App with Next.js 13 and Firebase](https://www.freecodecamp.org/news/create-full-stack-app-with-nextjs13-and-firebase/)
 
 # History of `NextJS`
 * Released in Oct. 2016 by __Vercel__ with the goal of resolving the following drawbacks of `ReactJS`
@@ -17,11 +19,25 @@
     1. Server-side rendering (SSR)
     2. Additional server-side functionality
     3. An improved development and deployment toolchain
+* You use `React` Components to build user interfaces, and `Next.js` for additional features and optimizations.
+* By framework, we mean `Next.js` handles the tooling and configuration needed for `React`, and provides additional structure, features, and optimizations for your application.
 
 * It's significant for web app development because it helps with things like:
   * page routing, 
   * server-side rendering, and 
   * quick loading times, which are critical for generating a great user experience.
+
+# 9 Building Blocks of a Web Application
+* There are a few things you need to consider when building modern applications. Such as:
+    1. __UI__: how users will consume and interact with your application.
+    2. __Routing__ - how users navigate between different parts of your application.
+    3. __Data Fetching__ - where your data lives and how to get it.
+    4. __Rendering__ - when and where you render static or dynamic content.
+    5. __Integrations__ - what third-party services you use (CMS, auth, payments, etc) and how you connect to them.
+    6. __Infrastructure__ - where you deploy, store, and run your application code (Serverless, CDN, Edge, etc).
+    7. __Performance__ - how to optimize your application for end-users.
+    8. __Scalability__ - how your application adapts as your team, data, and traffic grow.
+    9. __Developer Experience__ - your team’s experience building and maintaining your application.
 
 # Setup
 ```sh
