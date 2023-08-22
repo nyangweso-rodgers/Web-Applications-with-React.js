@@ -4,10 +4,13 @@
 - [Further Reading]()
     1. [react.dev/learn](https://react.dev/learn)
     2. [oneline converter](https://transform.tools/html-to-jsx)
+    3. [react.dev/learn/writing-markup-with-jsx#the-rules-of-jsx](https://react.dev/learn/writing-markup-with-jsx#the-rules-of-jsx)
+
+
 
 # `JSX`
 * `React` doesn’t have `HTML` files, `HTML` tags are rendered directly inside `JavaScript`. This approach makes `React` faster.
-* Most React projects use `JSX` for its convenience.
+* Most `React` projects use `JSX` for its convenience.
 * `JSX` is stricter than `HTML:`
     -  You have to close tags like `<br />`. 
     -  Your component also can’t return multiple `JSX` tags
@@ -19,10 +22,53 @@
                     <h1>Header 1</h1>
                     <p>Hello there.<br />How do you do?</p>
                 </>
-            );
+            )
         }
     ```
 * If you have a lot of HTML to port to JSX, you can use an [oneline converter](https://transform.tools/html-to-jsx)
+
+# 3 Rules of `JSX`
+## 3 Rules of `JSX` 1: Return a single root element
+* To return multiple elements from a component, __wrap them with a single parent tag__. 
+* E.g., For example, you can use a `<div>`:
+
+    ```jsx
+        <div>
+            <h1>My header!</h1>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+           <button></button> 
+        </div>
+    ```
+* If you don’t want to add an extra `<div>` to your markup, you can write `<>` and `</>` instead:
+* This empty tag is called a [Fragment](https://react.dev/reference/react/Fragment). 
+* __Fragments__ let you group things without leaving any trace in the browser `HTML` tree.
+    ```jsx
+        <>
+            <h1>My header!</h1>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+           <button></button> 
+        </>
+    ```
+## 3 Rules of `JSX` 2: Close all tags
+* `JSX` requires tags to be explicitly closed: self-closing tags like `<img>` must become `<img />`, and wrapping tags like `<li>`oranges must be written as `<li>`oranges`</li>`.
+## 3 Rules of `JSX` 3: camelCase, all/most of the things
+* `JSX` turns into `JavaScript` and attributes written in `JSX` become keys of `JavaScript` objects. In your own components, you will often want to read those attributes into variables. But JavaScript has limitations on variable names. For example, their names can’t contain dashes or be reserved words like `class`.
+
+* This is why, in `React`, many `HTML` and `SVG` attributes are written in __camelCase__. For example, instead of `stroke-width` you use `strokeWidth`. Since class is a reserved word, in `React` you write `className` instead.
+
+    ```jsx
+        <div className="container">
+            This is a div!
+        </div>
+    ```
 
 # Adding Styles
 * In `React`, you specify a `CSS` class with `className`. It works the same way as the `HTML` class attribute:
@@ -81,17 +127,4 @@
         };
 
         const element = <MyComponent {...props} />
-    ```
-
-## `JSX` Feature: `JSX` Fragments
-* `JSX` Fragments allow you to return multiple elements from a `component` without adding an extra element around them.
-* To use `JSX` Fragments, you just have to wrap your elements in `<> `syntax. Example:
-
-    ```jsx
-        const MyComponent = () => (
-            <>
-                <h1>Some header content</h1>
-                <p>Paragraph goes here</p>
-            </>
-        )
     ```
