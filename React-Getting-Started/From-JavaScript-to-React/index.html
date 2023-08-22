@@ -14,9 +14,13 @@
 
     <script type="text/jsx">
         const app = document.getElementById('app');
-        ReactDOM.render(
-            <h1>Hello world!</h1>, app
-        )
+
+        const Header = () => {
+            return (
+                <h1>From JavaScript to React!</h1>
+            )
+        }
+        ReactDOM.render(<Header />, app)
     </script>
 </body>
 </html>
