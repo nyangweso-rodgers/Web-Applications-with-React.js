@@ -7,12 +7,11 @@
     1. [reactjsguru - react-jsx](https://reactjsguru.com/react-jsx/)
     2. [freecodecamp - React Conditional Rendering – Explained with Examples From BBC Sports](https://www.freecodecamp.org/news/react-conditional-rendering/)
 
-# `React` Core Library CDN
-```html
-    <!-- React Core Libraries Scripts CDN-->
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> 
-```
+# 3 React Core Concepts
+* There are three core concepts of React
+    1. Components
+    2. Props
+    3. State
 
 # `React` Conditional Rendering
 * In `React`, __conditional rendering__ is the process of displaying different content based on certain conditions or states.
