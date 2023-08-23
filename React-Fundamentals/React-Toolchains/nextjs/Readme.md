@@ -18,12 +18,6 @@
     7. __Performance__ - how to optimize your application for end-users.
     8. __Scalability__ - how your application adapts as your team, data, and traffic grow.
     9. __Developer Experience__ - your team’s experience building and maintaining your application.
-# History of `NextJS`
-* Released in Oct. 2016 by __Vercel__ with the goal of resolving the following drawbacks of `ReactJS`
-    1. Performance issues
-    2. Routing
-    3. Server-side rendering
-    4. SEO
 
 # Introduction to `NextJS`
 * `NextJS` is a `React` Framework that enables:
@@ -84,7 +78,7 @@
 
 * __Note__: 
   * You can opt to use __client-side rendering__ for specific components in your `Next.js` application by choosing to fetch data with React’s `useEffect()` or a data fetching hook such as [useSWR](https://swr.vercel.app/).
-# Setup
+# Setup: Create `Next.js` App
 ```sh
     # create a `my-test-app`
     npx create-next-app@latest my-test-app
@@ -93,85 +87,43 @@
     # start the server
     npm run dev
 ```
+* Editing the Page:
+  * While the `Next.js` development server is running, 
+  * open `src/app/page.js` and modify any of the `html` element to see the changes.
 
-# Setup Settings
-1. Would you like to use `TypeScript` with this project? … No / Yes
-2. Would you like to use `ESLint` with this project? … No / Yes
-3. Would you like to use `Tailwind CSS` with this project? … No / Yes
-4. Would you like to use `src/` directory with this project? … No / Yes
-5. Use `App Router` (recommended)? … No / Yes
-6. Would you like to customize the default import alias? … No / Yes
+# Navigation Between pages
+* In `Next.js`, a `page` is a `React` `Component` exported from a file in the `pages/` directory.
+* Pages are associated with a route based on their __file name__. For example, in development:
+  * `pages/index.js` is associated with the `/` route
+  * `pages/posts/first-post.js` is associated with the `/posts/first-post` route
+* We already have the `pages/index.js` file, so let’s create `pages/posts/first-post.js` to see how it works.
 
-# `NextJS` Toolchain Folder Structure
-![]()
+# `Next.js` Project Structure
+## `Next.js` Top-level Folders
+1. `app` App router
+2. `pages` Pages router
+3. `public` Static assets to be served
+4. `src` Optional application source folder
 
-# `NextJS` Folder File(s)
-
-## Root Files
-### Root File 1: `package.json`
-```json
-    {
-    "name": "my-test-app",
-    "version": "0.1.0",
-    "private": true,
-    "scripts": {
-        "dev": "next dev",
-        "build": "next build",
-        "start": "next start",
-        "lint": "next lint"
-    },
-    "dependencies": {
-        "eslint": "8.47.0",
-        "eslint-config-next": "13.4.16",
-        "next": "13.4.16",
-        "react": "18.2.0",
-        "react-dom": "18.2.0"
-    }
-    }
-```
-### Root File 2: `jsconfig.json`
-```json
-    {
-        "compilerOptions": {
-            "paths": {
-            "@/*": ["./src/*"]
-            }
-        }
-    }
-```
-
-### Root File 3: `next.config.js`
-```js
-    /** @type {import('next').NextConfig} */
-    const nextConfig = {
-    reactStrictMode: true,
-    }
-
-    module.exports = nextConfig
-```
-
-### Root File 4: `package-lock.json`
-
-### Root File 5: `.gitignore`
-### Root File 6: `.estlintrc.json`
-```json
-    {
-    "extends": "next/core-web-vitals"
-    }
-```
+## `src/` Directory
+* As an alternative to having the special Next.js `app/` or `pages/` directories in the root of your project, `Next.js` also supports the common pattern of placing application code under the `src` directory.
+* This separates application code from project configuration files which mostly live in the root of a project, which is preferred by some individuals and teams.
+* To use the `src` directory, move the `app` Router folder or `pages` Router folder to `src/app` or `src/pages` respectively.
+## `Next.js` Top-level Files
+1. `next.config.js` Configuration file for Next.js
+2. `package.json`	Project dependencies and scripts
+3. `jsconfig.json` Configuration file for JavaScript
+4. `.gitignore`	Git files and folders to ignore
+5. `package-lock.json`
+6. `.estlintrc.json` Configuration file for ESLint
 
 
-# Root Folders
-## Root Folder 1: `node_modules/`
-## Root Folder 2: `public/`
-## Root Folder 3: `src/`
-### `src/pages`
-### `src/pages/_app.js`
-### `src/pages/_document.js`
-### `src/pages/index.js`
-### `src/pages/api/`
-### `src/pages/api/hello.js`
-
-
-
-#### `src/styles`
+# Adding `bootstrap@5.1.3`
+* Run the following command in the terminal:
+    ```sh
+        # install bootstrap
+        npm install bootstrap@5.1.3
+    ```
+* Note:
+  * Running the above command without specifying the version, `npm` will by default install the latest version of the `Bootstrap` package available in the npm registry. This behavior is true for all packages you install using `npm`, not just `Bootstrap`.
+* Import `'bootstrap/dist/css/bootstrap.css'` to the `pages.js` file.
