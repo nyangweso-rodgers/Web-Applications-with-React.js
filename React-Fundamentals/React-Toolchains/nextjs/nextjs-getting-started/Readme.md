@@ -4,6 +4,12 @@
 - [Further Reads]()
     1. [](https://nextjs.org/learn/foundations/from-react-to-nextjs/getting-started-with-nextjs)
 
+# History of `NextJS`
+* Released in Oct. 2016 by __Vercel__ with the goal of resolving the following drawbacks of `ReactJS`
+    1. Performance issues
+    2. Routing
+    3. Server-side rendering
+    4. SEO
 
 # Manual Installation of `Next.js`
 * To add `Next.js` to your project, you will not need to load the `react` and `react-dom` scripts from [unpkg.com](https://unpkg.com/) anymore. Instead, you can install these packages locally using the `npm`.
@@ -148,3 +154,8 @@
         ```
 ## Running the development server
 * To confirm everything works, you can view your app by running `npm run dev` inside your terminal and navigating to [localhost:3000](http://localhost:3000/) in the browser. Then, make a small change to the code and save it.
+
+    ```sh
+        # run the development server
+        npm run dev
+    ```
