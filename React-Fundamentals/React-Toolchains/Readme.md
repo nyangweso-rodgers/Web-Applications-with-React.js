@@ -2,8 +2,7 @@
 
 ## Table of Contents
 - [Further Reading]()
-    1. [How to remove node_modules folder](https://sebhastian.com/remove-node-modules/)
-    2. [Quick way to delete node_modules folder on Windows](https://www.cloudhadoop.com/nodejs-quick-way-delete-node-modules)
+    1. []()
 
 # Popular Toolchains for `ReactJS`
 1. `create-react-app` (`CRA`)
@@ -13,6 +12,8 @@
 # `Vite` vs. `CRA`
 * Choose `CRA` if you prioritize simplicity, ease of use and no-configuration setup.
 * Choose `Vite` if you value speed, performance and flexibility.
+
+# `Next.js` vs `CRA`
 
 # Common Folders and Files in React Toolchains
 
