@@ -78,6 +78,29 @@
 
 * __Note__: 
   * You can opt to use __client-side rendering__ for specific components in your `Next.js` application by choosing to fetch data with React’s `useEffect()` or a data fetching hook such as [useSWR](https://swr.vercel.app/).
+
+# Routing
+## `app` Router
+* In version 13, `Next.js` introduced a new __App Router__ which supports:
+  * shared layouts, 
+  * nested routing, 
+  * loading states, 
+  * error handling, and more.
+
+* The __App Router__ works in a new directory named `app`. The `app` directory works alongside the `pages` directory to allow for incremental adoption.
+* By default, components inside `app` are [React Server Components](https://nextjs.org/docs/getting-started/react-essentials). This is a performance optimization and allows you to easily adopt them, and you can also use [Client Components](https://nextjs.org/docs/getting-started/react-essentials).
+
+* Remarks:
+  * Roles of Folders and Files:
+    * __Folders__ are used to define routes. A route is a single path of nested folders, following the file-system hierarchy from the root folder down to a final leaf folder that includes a `page.js` file.
+    * __Files__ are used to create UI that is shown for a route segment
+
+
+
+
+
+
+
 # Setup: Create `Next.js` App
 ```sh
     # create a `my-test-app`
@@ -91,6 +114,91 @@
   * While the `Next.js` development server is running, 
   * open `src/app/page.js` and modify any of the `html` element to see the changes.
 
+# Folder Structure
+1. `node_modules/`
+
+
+2. `public/`: Static assets to be served
+   
+3. `src/`: Optional application source folder
+   * `app/`: App router
+     * `app/layout.js`
+     * `page.js`
+
+4. `next.config.js` Configuration file for Next.js
+5. `package.json`	Project dependencies and scripts
+6. `jsconfig.json` Configuration file for JavaScript
+7. `.gitignore`	Git files and folders to ignore
+8. `package-lock.json`
+9.  `.estlintrc.json` Configuration file for ESLint
+
+# Pages and Layouts
+## `src/app/page.js` and `src/app/layout.js`
+* The `App Router` inside `Next.js` 13 introduced new file conventions to easily create [pages](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts?utm_source=hashnode&utm_medium=hashnode+rix&utm_campaign=rix_chatbot_answer#pages), [shared layouts](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts?utm_source=hashnode&utm_medium=hashnode+rix&utm_campaign=rix_chatbot_answer#layouts), and [templates](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts?utm_source=hashnode&utm_medium=hashnode+rix&utm_campaign=rix_chatbot_answer#templates). 
+## `src/app/page.js`
+* A __page__ is a UI unique to a route.
+* You can define __pages__ by exporting a component from a `page.js` file.
+* Example:
+    ```js
+      // page.js
+      const Page = () => {
+        return (
+          <div>
+            <h1>Home page!</h1>
+          </div>
+        )
+      }
+
+      export default Page;
+    ```
+    * This page will be served at the `/` route.
+    * `Next.js` will automatically map `page.js` files to routes, based on the file and folder structure.
+* Remarks:
+  * `.js`, `.jsx` or `.tsx` file extensions can be used for __Pages__.
+  * A `page.js` file is required to make a route segment publicly accessible.
+
+
+## `src/app/layout.js`
+* A __layout__ is UI that is shared between multiple __pages__.
+* On navigation, __layouts__ preserve state, remain interactive, and do not re-render.
+* It accepts a children `prop` that will contain either a child layout or a page component.
+* Example:
+  * Define a layout:
+    ```js
+      // layout.js
+      const Layout = () => {
+        return (
+          <div>
+            {/* Header */}
+            <header>....</header>
+
+            {children}
+
+            {/* Footer */}
+            <footer>.....</footer>
+          </div>
+        )
+      };
+
+      export default Layout;
+    ```
+  * This Layout can then be used by any __page__:
+    ```js
+      // 
+      import Layout from '../layout';
+
+      const Page = () => {
+        return (
+          <Layout>
+            {/* Page content */}
+          </Layout>
+        )
+      }
+
+      export default Page;
+    ```
+* Layouts are useful for defining shared headers, footers, sidebar and other common UI.
+
 # Navigation Between pages
 * In `Next.js`, a `page` is a `React` `Component` exported from a file in the `pages/` directory.
 * Pages are associated with a route based on their __file name__. For example, in development:
@@ -98,32 +206,53 @@
   * `pages/posts/first-post.js` is associated with the `/posts/first-post` route
 * We already have the `pages/index.js` file, so let’s create `pages/posts/first-post.js` to see how it works.
 
-# `Next.js` Project Structure
-## `Next.js` Top-level Folders
-1. `app` App router
-2. `pages` Pages router
-3. `public` Static assets to be served
-4. `src` Optional application source folder
 
-## `src/` Directory
-* As an alternative to having the special Next.js `app/` or `pages/` directories in the root of your project, `Next.js` also supports the common pattern of placing application code under the `src` directory.
-* This separates application code from project configuration files which mostly live in the root of a project, which is preferred by some individuals and teams.
-* To use the `src` directory, move the `app` Router folder or `pages` Router folder to `src/app` or `src/pages` respectively.
-## `Next.js` Top-level Files
-1. `next.config.js` Configuration file for Next.js
-2. `package.json`	Project dependencies and scripts
-3. `jsconfig.json` Configuration file for JavaScript
-4. `.gitignore`	Git files and folders to ignore
-5. `package-lock.json`
-6. `.estlintrc.json` Configuration file for ESLint
-
-
-# Adding `bootstrap@5.1.3`
+# Requirements: Adding `bootstrap@5.1.3`
 * Run the following command in the terminal:
     ```sh
         # install bootstrap
         npm install bootstrap@5.1.3
     ```
+* Import `bootstrap.css` to the `pages.js` file.
+  ```js
+    // pages.js
+    // import bootstrap to pages.js
+    import 'bootstrap/dist/css/bootstrap.css';
+  ```
 * Note:
   * Running the above command without specifying the version, `npm` will by default install the latest version of the `Bootstrap` package available in the npm registry. This behavior is true for all packages you install using `npm`, not just `Bootstrap`.
-* Import `'bootstrap/dist/css/bootstrap.css'` to the `pages.js` file.
+
+# Requirements: Adding Google Fonts
+* Check the [Google font](https://fonts.google.com/) and choose the best for your project.
+## next/font
+* `Next.js` 13 introduces a new font system, that provides you with easy access to all the fonts stored in [Google fonts](https://fonts.google.com/). These get downloaded when you build your app, so no requests get sent to Google client-side. This helps with speed and performance since the fonts get stored locally. `Next.js` also includes automatic optimization for fonts, similar to how it optimises images with its Image component.
+  
+* Installation with `npm`:
+    ```sh
+      # install next/font
+      npm install @next/font
+    ```
+* Now you can import any fonts from Google fonts inside the `src/layout.js` file:
+    ```js
+      // import '@next/font 
+      import { Trirong } from '@next/font/google';
+    ```
+* Now, on the `src/layout.js` file
+  ```js
+      import './globals.css'
+      import { Trirong } from 'next/font/google'
+
+      const trirong = Trirong({ 
+        subsets: ['latin'],
+        weight: ['300']
+      })
+
+
+      export default function RootLayout({ children }) {
+        return (
+          <html lang="en">
+            <body className={trirong.className}>{children}</body>
+          </html>
+        )
+      }
+  ```
