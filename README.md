@@ -14,6 +14,18 @@
   4. [Hashnode - 7 Best Practices for Keeping a React Project Clean and Efficient](https://theankurtyagi.hashnode.dev/7-best-practices-for-keeping-a-react-project-clean-and-efficient)
   5. [freeCodeCamp - Front End JavaScript Development Handbook – React, Angular, and Vue Compared](https://www.freecodecamp.org/news/front-end-javascript-development-react-angular-vue-compared/)
 
+
+# 9 Building Blocks of a Web Application
+* There are a few things you need to consider when building modern applications. Such as:
+    1. __UI__: how users will consume and interact with your application.
+    2. __Routing__ - how users navigate between different parts of your application.
+    3. __Data Fetching__ - where your data lives and how to get it.
+    4. __Rendering__ - when and where you render static or dynamic content.
+    5. __Integrations__ - what third-party services you use (CMS, auth, payments, etc) and how you connect to them.
+    6. __Infrastructure__ - where you deploy, store, and run your application code (Serverless, CDN, Edge, etc).
+    7. __Performance__ - how to optimize your application for end-users.
+    8. __Scalability__ - how your application adapts as your team, data, and traffic grow.
+    9. __Developer Experience__ - your team’s experience building and maintaining your application.
 # Project Requirements
 
 ## Requirements: Chrome Extension for `ReactJS` Development
