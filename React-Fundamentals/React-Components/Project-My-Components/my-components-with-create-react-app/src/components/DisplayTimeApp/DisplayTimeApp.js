@@ -4,9 +4,9 @@ const DisplayTimeApp = () => {
     return (
         <>
             <header>
-                <nav className='navbar navbar-expand-md navbar-light bg-dark'>
+                <nav className='navbar navbar-expand-md navbar-dark bg-dark'>
                     <div className='container'>
-                        <span className='navbar-brand mb-0'>Display Time App</span>
+                        <span className='navbar-brand'>Display Time App</span>
                     </div>
                 </nav>
             </header>

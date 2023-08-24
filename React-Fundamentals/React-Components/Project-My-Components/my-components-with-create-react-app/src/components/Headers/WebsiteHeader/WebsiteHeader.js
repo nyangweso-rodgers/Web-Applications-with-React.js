@@ -8,7 +8,7 @@ const WebsiteHeader = (props) => {
     return (
         <>
             <header className="header-section">
-                <nav className="navbar navbar-expand-md bg-dark">
+                <nav className="navbar navbar-expand-md">
                     <div className="container">
                         <a className="navbar-brand" href="#/">{user.fullName}</a>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar">
@@ -32,7 +32,9 @@ const WebsiteHeader = (props) => {
                     </div>
                 </nav>
             </header>
-            <section className="section border border-danger"></section>
+            <section className="section border border-danger">
+                <div className="container"></div>
+            </section>
         </>
     )
 };

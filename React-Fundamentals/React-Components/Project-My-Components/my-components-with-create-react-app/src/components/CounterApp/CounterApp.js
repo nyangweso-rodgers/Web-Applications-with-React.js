@@ -18,7 +18,7 @@ const CounterApp = (props) => {
         <>
             <section>
                 <header>
-                    <nav className='navbar navbar-expand-md bg-primary navbar-dark'>
+                    <nav className='navbar navbar-expand-md navbar-dark bg-dark'>
                         <div className='container'>
                             <span className='navbar-text'>Counter Application Component</span>
                         </div>
