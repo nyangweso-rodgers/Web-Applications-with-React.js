@@ -7,8 +7,8 @@
     3. [dev.to - How to build and deploy a modern-day Next.js application](https://dev.to/livecycle/how-to-build-and-deploy-a-modern-day-nextjs-application-mgn)
     4. [freeCodeCamp - How to Build a Full Stack App with Next.js 13 and Firebase](https://www.freecodecamp.org/news/create-full-stack-app-with-nextjs13-and-firebase/)
 
-# Introduction to `NextJS`
-* `NextJS` is a `React` Framework that enables:
+# Introduction to `Next.js`
+* `Next.js` is a `React` Framework that enables:
     1. Server-side rendering (SSR)
     2. Additional server-side functionality
     3. An improved development and deployment toolchain
@@ -53,7 +53,6 @@
 
 # Folder Structure
 1. `node_modules/`
-
 
 2. `public/`: Static assets to be served
    
