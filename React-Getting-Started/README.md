@@ -9,15 +9,13 @@
 
 * A __framework__, on the other hand, is a more opinionated and prescriptive approach to building applications. A _framework provides a structure and set of conventions for building an application, and the application is built within the constraints and guidelines provided by the framework_. The framework controls the flow of the program and the application provides the specific implementation details.
 
-* In the context of `Angular` and `React`, __Angular__ is a framework, while React is a library. Angular provides a complete solution for building web applications, including a structure for organizing and building the application, as well as a set of conventions and tools for handling tasks such as state management and server communication. React, on the other hand, provides a set of components and functions that can be used to build a user interface, but it is up to the developer to choose how to handle other aspects of the application.
+* In the context of `Angular` and `React`, __Angular__ is a framework, while `React` is a library. `Angular` provides a complete solution for building web applications, including a structure for organizing and building the application, as well as a set of conventions and tools for handling tasks such as state management and server communication. `React`, on the other hand, provides a set of components and functions that can be used to build a user interface, but it is up to the developer to choose how to handle other aspects of the application.
 
-*  the choice between a library and a framework depends on the specific needs and requirements of the application and the development team. A framework can provide a more structured and opinionated approach to building an application, while a library provides more flexibility and control over the application structure.
-
-# Introduction to `ReactJS`
-* `React` is a `JavaScript library` used to build _User Interfaces_ developed and maintained by __Facebook__. It is capable of building complex and highly interactive single-page web applications and can be integrated with any backend.
+# Introduction to `React`
+* `React` is a `JavaScript library` used to build _User Interfaces_ developed and maintained by __Facebook__. It is capable of building complex and highly interactive single-page web applications.
 
 # How does `ReactJS` Work?
-* `ReactJS` creates a __VIRTUAL DOM__ in memory. Instead of manipulating the browser's DOM directly, `ReactJS` creates a __virtual DOM__ in memory, where it does all the necessary manipulating, before making the changes in the browser DOM.
+* `ReactJS` creates a __VIRTUAL DOM__ in memory. Instead of manipulating the browser's `DOM` directly, `ReactJS` creates a __virtual DOM__ in memory, where it does all the necessary manipulating, before making the changes in the browser `DOM`.
 
 * `ReactJS` only changes what needs to be changed! i.e., it finds out what changes have been made, and changes only what needs to be changed.
 
@@ -31,7 +29,7 @@
 # Cons OF `ReactJS`
 * `ReactJS` uses traditional `MVC` framework and hence requires complex configuration.
 * An in depth knowledge is required for integration the UI into `MVC framework`
-* __Redux__ and Routing are external tools that need to be learnt, whereas Angular has most of these tools inbuilt.\
+* __Redux__ and __Routing__ are external tools that need to be learnt, whereas `Angular` has most of these tools inbuilt.
 
 # Angular vs React
 Parameter | Angular | React
