@@ -1,12 +1,10 @@
-import 'bootstrap/dist/css/bootstrap.css'
-//import Image from 'next/image'
-//'import styles from './page.module.css'
-import WebsiteHeader from "./components/Headers/WebsiteHeader"
+import 'bootstrap/dist/css/bootstrap.css';
+import App from './components/app';
 
-export default function Home() {
+const Index = () => {
   return (
-    <main>
-      <WebsiteHeader />
-    </main>
+    <App />
   )
 }
+
+export default Index;
