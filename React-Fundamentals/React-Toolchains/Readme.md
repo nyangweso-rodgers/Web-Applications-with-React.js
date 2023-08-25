@@ -4,7 +4,17 @@
 - [Further Reading]()
     1. []()
 
-# Popular Toolchains for `ReactJS`
+
+# Why Tooling is Needed
+1. Act as a starting point for `React` applications
+2. Transform `JSX` to `JavaScript`
+3. Process `JavaScript` files
+4. Run development server
+5. Automatically update the browser when source files change
+6. Create a production build
+
+
+# Popular Toolchains for `React.js`
 1. `create-react-app` (`CRA`)
 2. `NextJS`
 3. `Vite`
@@ -33,3 +43,9 @@
         # using npm package
         npx rimraf node_modules
     ```
+
+# ESLint
+```sh
+    # for debugging purposes
+    npm run lint
+```
