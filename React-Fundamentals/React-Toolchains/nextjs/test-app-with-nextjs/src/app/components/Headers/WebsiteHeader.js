@@ -1,3 +1,4 @@
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import './WebsiteHeader.css';
 
 const WebsiteHeader = () => {
@@ -66,12 +67,49 @@ const WebsiteHeader = () => {
             <footer className="section">
                 <div className="container border border-danger text-center">
                     <div className="row border border-info p-5">
-                        <h2>This is a footer!</h2>
-                        <div className="row">
-                            <hr className='hr w-100' />
-                            <small className='text-center mt-3'>&copy; Rodgers Nyangweso, 2023. All rights reserved.</small>
+                        <div className='row border p-5'>
+                            <div>
+                                <i className='fas fa-heart'></i>
+                                <span className="fas fa-map-marker-alt"></span>
+                                <span className="fas fa-mobile-alt"></span>
+                                <span className="fas fa-envelope"></span>
+                                
+                                
+                                
+                            </div>
                         </div>
                         
+                    </div>
+                </div>
+            </footer>
+            <footer className='section border'>
+                <div className='container'>
+                    <div className='row'>
+                        <hr className='hr w-100' />
+                    </div>
+                    <div className='row'>
+                        <div className='col-sm-8 border border-danger d-flex'>
+                        <div className='col-sm-6 border'>
+                            <small className='text-center mt-3'>&copy; Rodgers Nyangweso, 2023. All rights reserved.</small>
+                        </div>
+                        <div className='col-sm-3 border'>
+                            <small>Privacy Policy</small>
+                        </div>
+                        <div className='col-sm-3 border'>
+                            <small>Terms of Service</small>
+                        </div>
+                        </div>
+                        <div className='col-sm-4 border border-primary d-flex justify-content-evenly'>
+                            <div className=' border'>
+                                <span className="fab fa-linkedin-in fa-2x text-decoration-none"></span>
+                            </div>
+                            <div className=' border'>
+                                <span className="fab fa-github fa-2x text-decoration-none"></span>  
+                            </div>
+                            <div className=' border'>
+                                <span className="fab fa-twitter fa-2x text-decoration-none"></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </footer>
