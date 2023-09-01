@@ -1,11 +1,14 @@
-import CounterApp from "./CounterApp/CounterApp";
-import MarketSurveyForm from "./Forms/MarketSurveyForm/MarketSurveyForm";
-import PricingTable from "./Tables/PricingTable/PricingTable";
+
+import RegistrationForm from "./Forms/RegistrationForm/RegistrationForm";
+import LoginForm from "./Forms/LoginForm/LoginForm";
 
 
 const App = () => {
     return (
-        <PricingTable />
+        <>
+            <RegistrationForm />
+            <LoginForm />
+        </>
     )
 };
 
