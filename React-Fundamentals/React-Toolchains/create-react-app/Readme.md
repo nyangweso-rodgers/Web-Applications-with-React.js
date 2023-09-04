@@ -6,13 +6,26 @@
     2. [react.dev/learn](https://react.dev/learn)
 
 # What is CRA?
-* __CRA__ is an officially supported way to __create single-page React applications__. It offers a modern build setup with no configuration.
 * It is a tool that generates a new `React` site for us along with all of the _configuration_ and _dependencies_ it needs to run. This means it does all the heavy lifting for us when creating a new __React App__.
+
+## Features of `CRA`
+* `CRA` automatically generates express, babel and webpack configurations.
+* `CRA` includes command line utilities for updating and maintaining project.
 
 # How `CRA` Works
 * `CRA` uses two popular `packages` 
   1. `webpack` which is a web bundler that optimizes all of the assets in your project, such as `JavaScript`, `CSS`, and `images`.,
   2. `Babel`:  which is a tool that allows you to use newer `JavaScript` features, even if some browsers don’t support them.
+
+## Advantages of `CRA`
+- Little to no understanding of full stack web development to use `CRA`
+- `CRA` is an industry standard tool
+- `CRA` automatically created directory structure based on best practices.
+
+## Disadvantages of `CRA`
+* Very large stack makes troubleshooting problems complicated.
+* Difficult to implement features not already supported.
+
 
 # Alternatives to `CRA`
 * `CRA` is a good tool for setting up a new `React` project. But there are newer tools that can do the job better:
