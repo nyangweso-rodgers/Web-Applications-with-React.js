@@ -19,3 +19,7 @@
 ```sh
    npm test
 ```
+# Testing React Components
+## Testing React Components 1: with React Testing Library
+
+## Testing React Components 2: Directly
