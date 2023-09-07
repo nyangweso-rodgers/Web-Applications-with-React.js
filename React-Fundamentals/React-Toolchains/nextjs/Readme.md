@@ -136,8 +136,8 @@
 * Layouts are useful for defining shared headers, footers, sidebar and other common UI.
 
 # Navigation Between pages
-* In `Next.js`, a `page` is a `React` `Component` exported from a file in the `pages/` directory.
-* Pages are associated with a route based on their __file name__. For example, in development:
-  * `pages/index.js` is associated with the `/` route
-  * `pages/posts/first-post.js` is associated with the `/posts/first-post` route
-* We already have the `pages/index.js` file, so let’s create `pages/posts/first-post.js` to see how it works.
+## `Link` Component
+* In `Next.js`, we use `Link` Component `next/link` to link between pages in an a application.
+* `<Link>` allows you to do client-side navigation and accepts `props` that give you better control over the navigation behavior.
+* To use `<Link>`:
+  * import the `Link` component from `next/link`
