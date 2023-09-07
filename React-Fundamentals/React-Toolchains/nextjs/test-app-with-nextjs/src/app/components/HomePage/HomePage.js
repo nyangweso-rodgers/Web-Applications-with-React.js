@@ -1,7 +1,7 @@
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import './WebsiteHeader.css';
+import './HomePage.css';
 
-const WebsiteHeader = () => {
+const HomePage = () => {
     return (
         <>
             <header className=''>
@@ -114,4 +114,4 @@ const WebsiteHeader = () => {
     )
 };
 
-export default WebsiteHeader;
+export default HomePage;
