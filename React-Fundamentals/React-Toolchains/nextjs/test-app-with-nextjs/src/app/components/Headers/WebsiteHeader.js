@@ -69,13 +69,9 @@ const WebsiteHeader = () => {
                     <div className="row border border-info p-5">
                         <div className='row border p-5'>
                             <div>
-                                <i className='fas fa-heart'></i>
                                 <span className="fas fa-map-marker-alt"></span>
                                 <span className="fas fa-mobile-alt"></span>
                                 <span className="fas fa-envelope"></span>
-                                
-                                
-                                
                             </div>
                         </div>
                         
