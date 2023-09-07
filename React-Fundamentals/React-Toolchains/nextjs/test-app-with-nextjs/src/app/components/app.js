@@ -1,9 +1,10 @@
-import WebsiteHeader from "./Headers/WebsiteHeader";
+import HomePage from "./HomePage/HomePage";
+
 
 
 const App = () => {
     return (
-    <WebsiteHeader />
+        <HomePage />
     );
 };
 
