@@ -20,6 +20,10 @@
   * server-side rendering, and 
   * quick loading times, which are critical for generating a great user experience.
 
+# `Next.js` vs. `create-react-app`
+* `create-react-app` does not easily help with generating server-side rendered apps.
+* `Next.js` comes with speed, and SEO.
+
 
 # Routing
 ## `app` Router
@@ -29,8 +33,7 @@
   * loading states, 
   * error handling, and more.
 
-* The __App Router__ works in a new directory named `app`. The `app` directory works alongside the `pages` directory to allow for incremental adoption.
-* By default, components inside `app` are [React Server Components](https://nextjs.org/docs/getting-started/react-essentials). This is a performance optimization and allows you to easily adopt them, and you can also use [Client Components](https://nextjs.org/docs/getting-started/react-essentials).
+* The __App Router__ works in a new directory named `app`. 
 
 * Remarks:
   * Roles of Folders and Files:
@@ -51,9 +54,8 @@
   * While the `Next.js` development server is running, 
   * open `src/app/page.js` and modify any of the `html` element to see the changes.
 
-# Folder Structure
+# `Next.js` Project Folder Structure
 1. `node_modules/`
-
 2. `public/`: Static assets to be served
    
 3. `src/`: Optional application source folder
@@ -68,72 +70,27 @@
 8. `package-lock.json`
 9.  `.estlintrc.json` Configuration file for ESLint
 
-# Pages and Layouts
-## `src/app/page.js` and `src/app/layout.js`
-* The `App Router` inside `Next.js` 13 introduced new file conventions to easily create [pages](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts?utm_source=hashnode&utm_medium=hashnode+rix&utm_campaign=rix_chatbot_answer#pages), [shared layouts](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts?utm_source=hashnode&utm_medium=hashnode+rix&utm_campaign=rix_chatbot_answer#layouts), and [templates](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts?utm_source=hashnode&utm_medium=hashnode+rix&utm_campaign=rix_chatbot_answer#templates). 
-## `src/app/page.js`
-* A __page__ is a UI unique to a route.
-* You can define __pages__ by exporting a component from a `page.js` file.
-* Example:
+# Absolute imports in `Next.js`
+* Wouldn’t it be great if we could avoid relative paths in imports, in our React components in `Next.js`?
+* So, instead of:
     ```js
-      // page.js
-      const Page = () => {
-        return (
-          <div>
-            <h1>Home page!</h1>
-          </div>
-        )
+      import Home from '../../components/Home';
+    ```
+  we could just write
+  ```js
+    import Home from 'components/Home';
+  ```
+* This is possible, and it’s called __absolute imports__.
+* Just add `jsconfig.json` file in the root of your project with this content:
+  ```js
+    // jsconfig.json
+    {
+      "compilerOptions": {
+        "baseUrl": "."
       }
+    }
+  ```
 
-      export default Page;
-    ```
-    * This page will be served at the `/` route.
-    * `Next.js` will automatically map `page.js` files to routes, based on the file and folder structure.
-* Remarks:
-  * `.js`, `.jsx` or `.tsx` file extensions can be used for __Pages__.
-  * A `page.js` file is required to make a route segment publicly accessible.
-
-
-## `src/app/layout.js`
-* A __layout__ is UI that is shared between multiple __pages__.
-* On navigation, __layouts__ preserve state, remain interactive, and do not re-render.
-* It accepts a children `prop` that will contain either a child layout or a page component.
-* Example:
-  * Define a layout:
-    ```js
-      // layout.js
-      const Layout = () => {
-        return (
-          <div>
-            {/* Header */}
-            <header>....</header>
-
-            {children}
-
-            {/* Footer */}
-            <footer>.....</footer>
-          </div>
-        )
-      };
-
-      export default Layout;
-    ```
-  * This Layout can then be used by any __page__:
-    ```js
-      // 
-      import Layout from '../layout';
-
-      const Page = () => {
-        return (
-          <Layout>
-            {/* Page content */}
-          </Layout>
-        )
-      }
-
-      export default Page;
-    ```
-* Layouts are useful for defining shared headers, footers, sidebar and other common UI.
 
 # Navigation Between pages
 ## `Link` Component
@@ -141,3 +98,17 @@
 * `<Link>` allows you to do client-side navigation and accepts `props` that give you better control over the navigation behavior.
 * To use `<Link>`:
   * import the `Link` component from `next/link`
+
+## Dynamic content with the `next/router` package
+* The __router__ is a library provided by `Next.js`.
+* We import it from `next/router`:
+    ```js
+      // 
+      import { useRouter } 'next/router'
+    ```
+* and once we have `useRouter`, we instantiate the router object using:
+    ```js
+      // 
+      const router = useRouter();
+    ```
+* Once we have this router object, we can extract information from it.
