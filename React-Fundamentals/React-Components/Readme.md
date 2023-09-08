@@ -81,7 +81,14 @@
 ```js
     const Home = (props) => <h1>createClass Component</h>
 ```
+# Two Component Types
+## 1. Component Type: Container
+* Focused on how things work
+* Are aware of __Redux__ and subscribe to __Redux state__ and dispatch Redux actions.
 
+## 2. Component Type: Presentational
+* Focused on how things look.
+* Unaware of __Redux__ and therefore, read data from `props` and invoke callbacks on `props`
 # Characteristics of React Component
 * Each __component__ has 3 distinct characteristics:
     1. `state`: 
