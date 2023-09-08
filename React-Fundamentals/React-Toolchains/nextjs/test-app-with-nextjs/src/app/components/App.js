@@ -1,12 +1,17 @@
 import Header from "./Common/Header";
-import HomePage from "./HomePage/HomePage";
-
+import About from "./Common/About";
+import Blog from "./Blog/Blog";
+import ContactForm from "./Common/ContactForm";
+import Footer from "./Common/Footer";
 
 const App = () => {
     return (
       <>
         <Header />
-        <HomePage />
+        <About />
+        <Blog />
+        <ContactForm />
+        <Footer />
       </>
     );
 };
