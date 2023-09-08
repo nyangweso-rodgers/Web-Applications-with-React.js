@@ -50,6 +50,11 @@ const About = () => {
               </p>
             </div>
           </div>
+          <div className="row">
+            <div className="col border">
+              <button className="btn">Get In Touch</button>
+            </div>
+          </div>
         </div>
       </main>
     </>
