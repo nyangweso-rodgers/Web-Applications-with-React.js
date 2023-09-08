@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.css';
-import App from './components/app';
+import App from './components/App';
 
 const Index = () => {
   return (
