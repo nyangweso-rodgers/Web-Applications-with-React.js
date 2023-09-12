@@ -5,8 +5,7 @@
     1. [Requirements 1: Adding `bootstrap@5.1.3`]()
     2. [Requirements 2: Adding Google Fonts]()
     3. [Requirements 3: Adding Font Awesome]()
-    4. 
-
+   
 - [Further Reading]()
     1. [Learn Next.js](https://nextjs.org/learn)
     2. [Resolving "Built-in next/font" Error in Next.js](https://nextjs.org/docs/messages/built-in-next-font)
