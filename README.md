@@ -57,3 +57,31 @@
 
 5. Surge
 6. Heroku
+
+# Analyzing `React` App Performance
+## Analyzing `React` App Performance:  using `React` Developer Tools
+
+# Improving `React` App Performance & Managing Large Datasets
+## Improving `React` App Performance:  using Pagination
+* Pagination also helps in managing and viewing larger data sets in `React`.
+* _Limitations_ of Pagination:
+   - Requires additonal UI elements
+   - Discountinous UI experience
+
+## Improving `React` App Performance: Infinite Scroll
+* __Infinite Scroll__ is an improved version of __pagination__.
+* _Limitations_ of Infinite Scroll:
+   - Users get lost
+
+## Improving `React` App Performance: Windowing
+* Using `react-window` library
+* _Limitations_ of __Windowing__:
+   * Complex implementation
+   * height and positioning constraints
+
+## Improving `React` App Performance: Eliminating Needles Renders
+* When Does React Re-render Components?
+  * _State changes_: state or prop changes in a component or its parent
+  * _Key changes_:
+  * _Life cycle methonds_:
+* __React Component Keys__
