@@ -40,7 +40,7 @@
 
 - Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-# `Next.js` 13 Folder Structure
+# Folder Structure with `Next.js` 13
 
 1. `node_modules/`
 2. `public/`: Static assets to be served
@@ -109,7 +109,26 @@
 
 # Linking and Navigation using `Link` Component
 
-- The `Link` Component can be imported from the `next/link`
+- When linking between pages on websites, we use the `<a>` HTML tag.
+- In `Next.js`, we use the `Link` Component [next/link](https://nextjs.org/docs/pages/api-reference/components/link) to link between pages in an application.
+- `<Link>` allows you to do client-side navigation and accepts `props` that give you better control over the navigation behavior.
+
+* The `Link` Component can be imported from the `next/link`
+* Remark:
+
+  - `prefetch` prop helps to fetch page in the background automatically, and it helps to improve web performance. It is by default `true`
+
+    ```js
+    import Link from "next/link";
+
+    export default function Page() {
+      return (
+        <Link href="/About" prefetch={false}>
+          About
+        </Link>
+      );
+    }
+    ```
 
 # Layout in `Next.js`
 
@@ -282,6 +301,22 @@
   - Dynamic data changes often and could be specific to users like a shopping cart.
 
 ## Fetch in `Next.js`
+
+# Additonal Libraries to `Next.js` App
+
+## Additonal Libary: `bootstrap@5.3.2` Module
+
+- Run the following command in the terminal:
+  ```sh
+      # install bootstrap
+      npm install bootstrap@5.1.3
+  ```
+- Import `bootstrap.css` to the `pages.js` file.
+  ```js
+  // pages.js
+  // import bootstrap to pages.js
+  import "bootstrap/dist/css/bootstrap.css";
+  ```
 
 # Deploy `Next.js` App on Vercel
 
