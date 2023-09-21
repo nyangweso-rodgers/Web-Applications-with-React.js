@@ -2,18 +2,7 @@
 
 
 # Requirements
-## Requirements 1: Adding `bootstrap@5.1.3`
-* Run the following command in the terminal:
-    ```sh
-        # install bootstrap
-        npm install bootstrap@5.1.3
-    ```
-* Import `bootstrap.css` to the `pages.js` file.
-  ```js
-    // pages.js
-    // import bootstrap to pages.js
-    import 'bootstrap/dist/css/bootstrap.css';
-  ```
+
 
 ## Requirements 3: Adding Font Awesome
 * [Font Awesome](https://fontawesome.com/) is an icon's library and toolkit.
@@ -58,7 +47,6 @@
       # From the NPM page, just install via npm
       npm install --save react-fontawesome
     ```
-
 
 
 
