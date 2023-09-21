@@ -9,7 +9,7 @@ const About = () => {
           <div className="row">
             <div className="col">
               <button className="btn btn-lg btn-success">
-                <Link href="../Blog">Get in touch</Link>
+                <Link href="#">Get in touch</Link>
               </button>
             </div>
           </div>
