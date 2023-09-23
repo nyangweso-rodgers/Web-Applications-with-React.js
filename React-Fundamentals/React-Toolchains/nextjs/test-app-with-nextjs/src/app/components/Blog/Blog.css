@@ -3,14 +3,6 @@ section {
     padding: 40px 0;
 }
 
-.blog-border-line {
-    width: 180px;
-    height: 4px;
-    background: #3498db;
-    margin: auto;
-    margin-bottom: 40px;
-}
-
 .card-col {
     display: flex;
     flex-direction: column;

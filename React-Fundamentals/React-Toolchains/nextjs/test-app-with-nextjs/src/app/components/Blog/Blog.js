@@ -7,10 +7,6 @@ const Blog = () => {
     <>
       <section>
         <div className="container-fluid border border-warning">
-          <div className="row border border-warning text-center">
-            <h1>Tech Blog</h1>
-            <span className="blog-border-line"></span>
-          </div>
           <div className="row border">
             <div className="col-sm card-col">
               <div className="card"></div>
