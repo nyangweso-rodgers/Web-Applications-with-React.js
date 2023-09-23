@@ -6,8 +6,9 @@
   1. [nextjs.org/docs](https://nextjs.org/docs)
   2. [nextjs.org/learn/foundation](https://nextjs.org/learn/foundations/about-nextjs)
   3. [Resolving "Built-in next/font" Error in Next.js](https://nextjs.org/docs/messages/built-in-next-font)
-  4. [dev.to - How to build and deploy a modern-day Next.js application](https://dev.to/livecycle/how-to-build-and-deploy-a-modern-day-nextjs-application-mgn)
-  5. [freeCodeCamp - How to Build a Full Stack App with Next.js 13 and Firebase](https://www.freecodecamp.org/news/create-full-stack-app-with-nextjs13-and-firebase/)
+  4. [refine.dev - Introduction to Next.js Link component with examples](https://refine.dev/blog/next-js-link-component/#introduction)
+  5. [dev.to - How to build and deploy a modern-day Next.js application](https://dev.to/livecycle/how-to-build-and-deploy-a-modern-day-nextjs-application-mgn)
+  6. [freeCodeCamp - How to Build a Full Stack App with Next.js 13 and Firebase](https://www.freecodecamp.org/news/create-full-stack-app-with-nextjs13-and-firebase/)
 
 # Introduction to `Next.js` 13
 
@@ -114,21 +115,56 @@
 - `<Link>` allows you to do client-side navigation and accepts `props` that give you better control over the navigation behavior.
 
 * The `Link` Component can be imported from the `next/link`
-* Remark:
 
-  - `prefetch` prop helps to fetch page in the background automatically, and it helps to improve web performance. It is by default `true`
+## Link Component `props`
 
-    ```js
-    import Link from "next/link";
+1. `href`:
 
-    export default function Page() {
-      return (
-        <Link href="/About" prefetch={false}>
-          About
-        </Link>
-      );
-    }
-    ```
+   - specifies the path or URL to navigate to which could be _absolute URL_, a _relative URL_, or a _URL object_.
+   - Absolute Url:
+     ```js
+     // absolute URL
+     <Link href="https://nextjs.org/docs">Read the docs</Link>
+     ```
+   - Relative URL:
+     ```js
+     // relative URL
+     <Link href="/about">About me</Link>
+     ```
+   - URL objects:
+     - With a URL object, we can resolve URLs using strings and parameters passed as an object to the `Next.js` Link component.
+       ```js
+       // URL object
+       <Link
+         href={{
+           pathname: "/products",
+           query: { product: "1" },
+         }}
+       >
+         <a>Search for products</a>
+       </Link>
+       ```
+     - The above example will resolve the `href` value into: `/products/?product=1`.
+
+2. `prefetch` 
+   -  helps to fetch page in the background automatically, and it helps to improve web performance. It is by default `true`
+
+3. `replace` 
+4. `scroll`
+5. `locale`
+6. `shallow`
+
+   ```js
+   import Link from "next/link";
+
+   export default function Page() {
+     return (
+       <Link href="/About" prefetch={false}>
+         About
+       </Link>
+     );
+   }
+   ```
 
 # Layout in `Next.js`
 
@@ -242,9 +278,36 @@
     import "./global.css";
     ```
 
-# Image in `Next.js` 13
+# Image in `Next.js` 13: `next/image`
 
-- Directly import the Image component from the `Next.js` package via `next/image`.
+- Some of the optimizations built into the `Image` component include:
+  - Improved Performance: Always deliver images of the correct size for each device, using updated image formats.
+  - Visual Stability: Prevent an unexpected shift layout as the page loads automatically
+  - Faster Page Loads: The images load when they enter the viewport, with blur-up placeholders as an option.
+  - Asset Flexibility: Resize photos stored on remote servers on the fly
+
+* To use the `Next.js` Image Component, `Image` component from the `Next.js` package via `next/image`.
+  ```js
+  // pages/index.js
+  import Image from "next/image";
+  ```
+* Required attributes:
+
+  - `src`: This is the path to the image.
+  - `alt`: This specifies the alternate text for an image.
+  - `width`: This specifies the width of the image in `px`.
+  - `height`: This specifies the height of the image in `px`.
+
+* Making `Next.js` images responsive using `layout` prop which has 4 options:
+
+  - `fixed`: The image is not scalable. The image’s width and height are specified regardless of the device’s size displayed.
+  - `intrinsic`: The image scales down to fit the container’s width on smaller viewports. The image does not scale up beyond its actual size on a larger viewport. The container width is set to 100%.
+  - `responsive`: On different viewports, the image is scaled down or up depending on the container’s width while retaining the aspect ratio.
+  - `fill`: Stretches the image’s width and height to fill the parent container.
+
+* Reference:
+  - [Cloudinary Implementing images using Next.js Image Component](https://cloudinary.com/blog/guest_post/implementing-images-using-next-js-image-component)
+  - [refine.dev - Nextjs image optimization with examples](https://refine.dev/blog/using-next-image/#introduction)
 
 # Rendering in `Next.js`
 
@@ -304,7 +367,7 @@
 
 # Additonal Libraries to `Next.js` App
 
-## Additonal Libary: `bootstrap@5.3.2` Module
+## Additional Libary: `bootstrap@5.3.2` Module
 
 - Run the following command in the terminal:
   ```sh
@@ -317,6 +380,51 @@
   // import bootstrap to pages.js
   import "bootstrap/dist/css/bootstrap.css";
   ```
+
+## Additional Libary: Font Awesome
+
+- [Font Awesome](https://fontawesome.com/) is an icon's library and toolkit.
+- Run the following command in the terminal to install Font Awesome to `Next.js`
+  ```sh
+      # install Font Awesome
+      # npm uninstall @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
+      npm install --save-dev @fortawesome/fontawesome-free
+  ```
+- Head to `package.json` file, you will see the following dependencies has added:
+  ```json
+  // package.json file
+  {
+    "devDependencies": {
+      "@fortawesome/fontawesome-free": "^6.4.2"
+    }
+  }
+  ```
+- `Next.js` allows you to import `CSS` directly in `.js` files. It handles optimization and all the necessary Webpack configuration to make this work.
+- Import the following, on the `app.js` file:
+  ```js
+  // app.js
+  import "@fortawesome/fontawesome-free/css/all.min.css";
+  ```
+- Usage:
+  ```js
+  const Home = () => {
+    return (
+      <div>
+        <h1>
+          <span className="fab fa-twitter fa-2x text-decoration-none"></span>
+          Header
+        </h1>
+      </div>
+    );
+  };
+  ```
+- Remark:
+  - you can also use the [react-fontawesome](https://www.npmjs.com/package/react-fontawesome) icon library.
+  - from the `npm` install
+    ```sh
+      # From the NPM page, just install via npm
+      npm install --save react-fontawesome
+    ```
 
 # Deploy `Next.js` App on Vercel
 
