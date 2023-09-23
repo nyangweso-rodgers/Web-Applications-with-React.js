@@ -3,13 +3,6 @@
     padding: 40px 0;
 }
 
-.contact-form-border {
-    width: 150px;
-    height: 10px;
-    background: #34495e;
-    margin: 10px auto;
-}
-
 .contact-form {
     max-width: 600px;
     margin: auto;

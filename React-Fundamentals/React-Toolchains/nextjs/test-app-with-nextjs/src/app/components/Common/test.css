@@ -1,0 +1,36 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /*color: #fff;*/
+    /*font-size: 1.5em;*/
+}
+
+.navbar-container a  {
+    text-decoration: none;
+    /*color: #ffff;*/
+    transition: 0.7s all;
+    padding: 8px 10px;
+}
+
+.navbar-container a:before {
+    width: 60px;
+    border-bottom: 8px solid #c01717;
+    position: absolute;
+    bottom: 0;
+    right: 350px;
+}
+
+.navbar-container a:hover:before {
+	right: 0;
+}
+
+.navbar-container .navbar-brand {
+    font-size: 30px;
+    transition: 0.7s all;
+}
+
+.navbar-collapse a {
+    font-size: 18px;
+}

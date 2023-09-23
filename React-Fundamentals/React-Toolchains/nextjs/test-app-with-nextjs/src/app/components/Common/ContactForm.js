@@ -6,10 +6,6 @@ const ContactForm = () => {
       <form className="contact-form-section border">
         <div className="container contact-form-container">
           <div className="row">
-            <h2>Contact me</h2>
-            <span className="contact-form-border"></span>
-          </div>
-          <div className="row">
             <div className="contact-form">
               <input
                 className="contact-form-text"

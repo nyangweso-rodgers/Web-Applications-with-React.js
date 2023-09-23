@@ -3,7 +3,7 @@ import "./About.css";
 const About = () => {
   return (
     <>
-      <main className="border border-primary">
+      <main className="about-section">
         <div className="container border border-secondary">
           <div className="row">
             <h2>About Rodgers Nyangweso</h2>
