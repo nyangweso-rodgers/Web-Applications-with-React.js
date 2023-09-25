@@ -1,9 +1,10 @@
 import styles from "./page.module.css";
+import Header from "./Components/Common/Header/page.js"
 
 const Home = () => {
   return (
     <>
-      <h1>Welcome!</h1>
+      <Header />
     </>
   );
 };
