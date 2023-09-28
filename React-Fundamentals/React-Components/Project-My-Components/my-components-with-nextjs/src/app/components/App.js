@@ -1,13 +1,11 @@
 
-import RegistrationForm from "./Forms/RegistrationForm/RegistrationForm";
-import LoginForm from "./Forms/LoginForm/LoginForm";
+import ImageGallery from "./ImageGallery/ImageGallery";
 
 
 const App = () => {
     return (
         <>
-            <RegistrationForm />
-            <LoginForm />
+            <ImageGallery />
         </>
     )
 };
