@@ -146,10 +146,11 @@
        ```
      - The above example will resolve the `href` value into: `/products/?product=1`.
 
-2. `prefetch` 
-   -  helps to fetch page in the background automatically, and it helps to improve web performance. It is by default `true`
+2. `prefetch`
 
-3. `replace` 
+   - helps to fetch page in the background automatically, and it helps to improve web performance. It is by default `true`
+
+3. `replace`
 4. `scroll`
 5. `locale`
 6. `shallow`
@@ -168,8 +169,58 @@
 
 # Layout in `Next.js`
 
-- Layout is UI shared between multiple pages. On navigation, layouts preserve state and do not re-render.
-- `src/app` directory requires a root layout, `src/app/layout.js`.
+- _Layout_ is UI shared between multiple pages. _Layouts_ are used to create a consistent design across our application. We can use _layouts_ to include common elements such as a **header**, **footer**, and **navigation menu** on every page of our application.
+- On navigation, layouts preserve state and do not re-render.
+- When you setup `Next.js` App, a root layout file, `layout.js`, is required within the `app/` folder which will be shared across all pages in the app.
+
+  ```js
+  // layout.js
+
+  export default function RootLayout({ children }) {
+    return (
+      <html lang="en">
+        <body>{children}</body>
+      </html>
+    );
+  }
+  ```
+
+- To create a _layout_ in `Next.js`, we first need to create a file with a `.js` extension in the layouts directory of our project.
+
+  - For example:
+  - suppose we want to create a _layout_ that includes a **header**, **footer**, and **navigation menu**. We can create a file named `DefaultLayout.js` in the layouts directory.
+    ```js
+    //
+    import Header from "../components/Header";
+    const DefaultLayout = ({ children }) => {
+      return (
+        <div>
+          <Header />
+          {children}
+          <footer>
+            <p>&copy; 2023 My Application</p>
+          </footer>
+        </div>
+      );
+    };
+    ```
+  - Here, we have created a _layout_ component that includes the **Header** component, the content of the **page**, and a **footer**.
+  - Now that we have created the `DefaultLayout` component, we can use it across our application. For example, let’s say we want to use the `DefaultLayout` component on our **home page**. We can import the `DefaultLayout` component in our `index.js` file and use it like this:
+
+    ```js
+    //
+    import DefaultLayout from "../Layouts/DefaultLayout";
+
+    const Home = () => {
+      return (
+        <DefaultLayout>
+          <h1>Content inside a DefaultLayout!</h1>
+        </DefaultLayout>
+      );
+    };
+    ```
+
+- A layout can be defined by default exporting a React component from a `layout.js` file. The component should accept a children `prop`, which will be populated within a page or other nested layouts.
 - Layouts defined inside a folder apply to specific route segments and render when these segments are active.
 
 # `@next/font`
