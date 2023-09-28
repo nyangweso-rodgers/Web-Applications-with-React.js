@@ -6,6 +6,9 @@ const LoginForm = () => {
             <section className='login-form-section border border-secondary'>
                 <div className='container'>
                     <div className='row'>
+                        <h2>Login to ....!</h2>
+                    </div>
+                    <div className='row'>
                         <div className='col-12'>
                             <label className='form-label'>Email Address</label>
                             <input type='email' className='form-control' placeholder='Email Address'></input>
