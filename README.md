@@ -1,4 +1,4 @@
-# Web Applications with `ReactJS`
+# Web Applications with `React.js`
 
 ## Table Of Contents
 - [ReactJS - Getting Started]()
@@ -38,11 +38,19 @@
 4. [JavaScript Debigger (Nightly)](https://learn.microsoft.com/en-us/visualstudio/javascript/debug-nodejs?view=vs-2022)
 5. [Prettier](https://prettier.io/)
 
-# Requirements: `ReactJS` UI Frameworks
+## Requirements: React UI Frameworks
 1. [Material UI](https://mui.com/material-ui/)
 2. [React-Bootstrap](https://react-bootstrap.github.io/docs/getting-started/introduction/)
 3. [React-Foundation](https://get.foundation/)
 4. [React Toolbox](https://react-toolbox.com/)
+
+## Requirements: React Framemeworks
+1. Next.js
+2. Gatsby
+3. Blitz.js 
+4. Redwood
+5. Remix
+
 
 ## Requirements: How to Host React Apps for Free
 1. Netlify
@@ -52,7 +60,7 @@
 3. GitHub Pages
 4. Firebase Hosting
    - Hosting for static and dynamic content as well as microservices
-   - Offers SSD storage
+   - Offers SSD storage 
    - CDN
 
 5. Surge
