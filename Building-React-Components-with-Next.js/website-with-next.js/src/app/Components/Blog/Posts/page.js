@@ -1,20 +1,36 @@
 import Header from "../../Header/page";
+import Link from "next/link";
 
 const Posts = () => {
   return (
     <>
-    <Header />
-      <section className="border border-primary p-5">
-        <div className="container border-secondary p-5">
+      <Header />
+      <section className="">
+        <div className="container-fluid">
           <div className="row">
-            <div className="col border p-5">
-              <h2>Featured posts</h2>
+            <div className="col-sm-4">
+              <div className="card">
+                <div className="card-body">
+                  <h4 className="card-title">Post title goes here!</h4>
+                  <Link href="#">Read more &gt;</Link>
+                </div>
+              </div>
             </div>
-            <div className="col border p-5">
-              <h2>Featured posts</h2>
+            <div className="col-sm-4">
+              <div className="card">
+                <div className="card-body">
+                  <h4 className="card-title">Post title goes here!</h4>
+                  <Link href="#">Read more &gt;</Link>
+                </div>
+              </div>
             </div>
-            <div className="col border p-5">
-              <h2>Featured posts</h2>
+            <div className="col-sm-4">
+              <div className="card">
+                <div className="card-body">
+                  <h4 className="card-title">Post title goes here!</h4>
+                  <Link href="#">Read more &gt;</Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>

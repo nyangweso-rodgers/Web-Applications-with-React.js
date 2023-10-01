@@ -1,0 +1,31 @@
+header {
+  width: 100%;
+  background-size: cover;
+}
+
+nav {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.navbar-brand {
+  font-size: 3rem;
+  font-weight: 300;
+  transform: translateX(-100rem);
+  animation: slideIn 0.5s forwards;
+}
+
+.card {
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+}
+
+footer {
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
