@@ -9,7 +9,7 @@ const Blog = () => {
   return (
     <>
       <section className="border border-primary">
-        <div className="container-fluid">
+        <div className="container">
           <div className="row text-center">
             <h2>Tech Blog</h2>
             <span className={styles.underlineBorder}></span>
@@ -27,6 +27,11 @@ const Blog = () => {
                 <div className="card-body border border-warning">
                   <h4 className="card-title">Card title goes here!</h4>
                   <Link href="#">Read more &gt;</Link>
+                  <p className="card-text">
+                    <small className="text-muted">
+                      Last updated 2 days ago
+                    </small>
+                  </p>
                 </div>
               </div>
             </div>
@@ -42,6 +47,11 @@ const Blog = () => {
                 <div className="card-body border border-warning">
                   <h4 className="card-title">Card title goes here!</h4>
                   <Link href="#">Read more &gt;</Link>
+                  <p className="card-text">
+                    <small className="text-muted">
+                      Last updated 2 days ago
+                    </small>
+                  </p>
                 </div>
               </div>
             </div>
@@ -57,6 +67,11 @@ const Blog = () => {
                 <div className="card-body border border-warning">
                   <h4 className="card-title">Card title goes here!</h4>
                   <Link href="#">Read more &gt;</Link>
+                  <p className="card-text">
+                    <small className="text-muted">
+                      Last updated 2 days ago
+                    </small>
+                  </p>
                 </div>
               </div>
             </div>
@@ -67,9 +82,6 @@ const Blog = () => {
                 <button className={styles.myButton}>Load all posts</button>
               </Link>
             </div>
-          </div>
-          <div className="row border">
-            <h2>Explore topics</h2>
           </div>
         </div>
       </section>
