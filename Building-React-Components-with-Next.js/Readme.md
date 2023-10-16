@@ -432,6 +432,18 @@
   import "bootstrap/dist/css/bootstrap.css";
   ```
 
+## Additional Libary to `Next.js` App: bootstrap icons
+* install [bootstrap icons](https://icons.getbootstrap.com/) with `npm`
+  ```sh
+    # install bootstrap icons
+    npm install bootstrap-icons
+  ```
+* import to the `page.js` file:
+  ```js
+    // import to the `page.js` file
+    import 'bootstrap-icons/font/bootstrap-icons.css';
+  ```
+
 ## Additional Libary: Font Awesome
 
 - [Font Awesome](https://fontawesome.com/) is an icon's library and toolkit.
