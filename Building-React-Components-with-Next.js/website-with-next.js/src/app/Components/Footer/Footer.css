@@ -1,0 +1,93 @@
+footer {
+  background-color: #dce2f0;
+  border: 1px solid #de2f2f;
+}
+
+.footer-first-row-container {
+  text-align: center;
+}
+
+.form-col,
+.contact-and-social-media-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-col > div,
+.contact-and-social-media-col > div {
+  margin: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin: 2px 0;
+}
+
+textarea {
+  height: 120px;
+  background-color: #f8f8f8;
+  transition: 0.5s;
+}
+
+input[type="submit"] {
+  background-color: #34495e;
+  color: #fff;
+  padding: 8px 10px;
+  margin: 2px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.contact-wrapper,
+.social-media-wrapper {
+  display: flex;
+}
+
+.contact-wrapper {
+  flex-direction: column;
+}
+
+.contact-wrapper > div,
+.social-media-wrapper > a {
+  margin: 8px;
+}
+
+.bi {
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.bi:hover {
+  opacity: 1;
+}
+
+.bi-linkedin {
+  background-color: #007bb5;
+  color: #fff;
+}
+
+.bi-github {
+  background-color: #333333;
+  color: #fff;
+}
+
+.bi-twitter-x {
+  background-color: #000;
+  color: #fff;
+}
+.footer-third-row-container {
+  text-align: center;
+}
