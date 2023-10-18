@@ -441,6 +441,7 @@
 * import to the `page.js` file:
   ```js
     // import to the `page.js` file
+    // import bootstrap-icons
     import 'bootstrap-icons/font/bootstrap-icons.css';
   ```
 
