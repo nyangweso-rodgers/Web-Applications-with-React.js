@@ -1,11 +1,12 @@
 import Image from "next/image";
+import nextImage from '../../../../public/next.js-image.jpg';
 
 const Page = () => {
   return (
     <>
       <div>
         <Image 
-        src={}
+        src={nextImage}
         alt="First Image"
         quality={100}
         placeholder="blur"
