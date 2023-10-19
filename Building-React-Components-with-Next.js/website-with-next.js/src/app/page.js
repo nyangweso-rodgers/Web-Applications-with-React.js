@@ -2,14 +2,12 @@ import "bootstrap/dist/css/bootstrap.css";
 // import bootstrap to pages.js
 import "bootstrap/dist/css/bootstrap.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import Link from "next/link";
-import styles from "./page.module.css";
 import Header from "./Components/Header/page";
 import About from "./Components/About/page";
 import Blog from "./Components/Blog/page";
 import Footer from "./Components/Footer/page";
 
-const Home = () => {
+const MyWebsite = () => {
   return (
     <>
       <Header />
@@ -20,4 +18,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default MyWebsite;
