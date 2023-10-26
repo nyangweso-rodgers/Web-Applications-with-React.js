@@ -1,15 +1,12 @@
-import Image from "next/image";
+"use client";
 import styles from "./page.module.css";
+import CounterApp from "./Components/CounterApp/page";
 
 export default function Home() {
   return (
     <>
       <main className={styles.main}>
-        <div className="container">
-          <div className="row">
-            <p>Test paragraph</p>
-          </div>
-        </div>
+      <CounterApp />
       </main>
     </>
   );
