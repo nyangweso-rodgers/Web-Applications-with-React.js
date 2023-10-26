@@ -6,12 +6,12 @@ import Header from "./Components/Common/Header/page.js";
 import LoginForm from "./Components/Forms/LoginForm/page";
 import Footer from "./Components/Common/Footer/page";
 import Counter from "./Components/Counter/page";
-import MyCard from "./Components/Cards/page.js";
+import CardTemplate from "./Components/Cards/CardTemplate/page.js";
 
 const Home = () => {
   return (
     <>
-    <MyCard />
+    <CardTemplate />
     </>
   );
 };
