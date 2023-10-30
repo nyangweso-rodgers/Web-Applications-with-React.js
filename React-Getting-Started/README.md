@@ -12,24 +12,6 @@
 * In the context of `Angular` and `React`, __Angular__ is a framework, while `React` is a library. `Angular` provides a complete solution for building web applications, including a structure for organizing and building the application, as well as a set of conventions and tools for handling tasks such as state management and server communication. `React`, on the other hand, provides a set of components and functions that can be used to build a user interface, but it is up to the developer to choose how to handle other aspects of the application.
 
 # Introduction to `React`
-* `React` is a `JavaScript library` used to build _User Interfaces_ developed and maintained by __Facebook__. It is capable of building complex and highly interactive single-page web applications.
-
-# How does `ReactJS` Work?
-* `ReactJS` creates a __VIRTUAL DOM__ in memory. Instead of manipulating the browser's `DOM` directly, `ReactJS` creates a __virtual DOM__ in memory, where it does all the necessary manipulating, before making the changes in the browser `DOM`.
-
-* `ReactJS` only changes what needs to be changed! i.e., it finds out what changes have been made, and changes only what needs to be changed.
-
-# Advantages of `ReactJS`
-* Very fast, gives smooth experience to users
-* Easy to develop and maintain due to its __Components__ based structure. A __component__ basically represent a piece of UI. Once a __component__ is created, it can be used as many times as you wish to.
-* can be use on client-side and server-side devices
-* reusable components rduce development time and help build complex functionalities
-* data is updated by refreshing UI, making it efficient
-
-# Cons OF `ReactJS`
-* `ReactJS` uses traditional `MVC` framework and hence requires complex configuration.
-* An in depth knowledge is required for integration the UI into `MVC framework`
-* __Redux__ and __Routing__ are external tools that need to be learnt, whereas `Angular` has most of these tools inbuilt.
 
 # Angular vs React
 Parameter | Angular | React
@@ -44,12 +26,6 @@ Testing and Debugging | In`AngularJS`, testing and debugging for a complete proj
 Application Types | You should `AngularJS` framework If you want to develop a SPA(Single Page Application) and mobile apps. | Use `ReactJS` if you want to develop Native apps, hybrid apps, or web apps
 Language used | `AngularJS` uses Typescript which requires a bit of prior learning to be done. | `ReactJS` is written in JavaScript which many programmers are familiar with, hence faster learning
 
-# Popular Apps using `ReactJS`
-* PayPal
-* BBC
-* Facebook
-* Netflix
-* Twitter
 
 # `ReactJS` Features
 
