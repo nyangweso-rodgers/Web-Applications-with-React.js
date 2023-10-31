@@ -1,3 +1,5 @@
+"use client"; // This is a client component
+import { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -8,13 +10,19 @@ import Footer from "./Components/Common/Footer/page";
 import Counter from "./Components/Counter/page";
 import CardTemplate from "./Components/Cards/CardTemplate/page.js";
 import ParentComponent from "./Components/ParentComponent/page.js";
+import BasicButton from "./Components/Buttons/BasicButton/page.js";
+import DropdownButton from "./Components/Buttons/DropdownButton/page.js";
 
-const Home = () => {
+const MyApp = () => {
+  useEffect(() => {
+    import("bootstrap/dist/js/bootstrap");
+  }, []);
   return (
     <>
-    <ParentComponent />
+      <BasicButton />
+      <DropdownButton />
     </>
   );
 };
 
-export default Home;
+export default MyApp;
