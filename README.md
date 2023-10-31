@@ -104,6 +104,37 @@
 - Netflix
 - Twitter
 
+## Features of React
+
+### Feature 1: React Virtual DOM
+
+- **Virtual DOM**: uses a strategy that updates the `DOM` without having to redraw all the webpage elements. Every time the `DOM` changes, browsers need to recalculate entire layout and then repaint the web page which makes the web app slow. To overcome this, we have **virtual DOM**. Evrey time the state of our application changes, the **virtual DOM** gets updates instead of the real `DOM`.
+
+- Whenever the new element is added to the UI, a new **virtual DOM** associated with that element is created. If state of this element chnages, a second new **virtual DOM** is created which will be compared with the previous **virtual DOM**. It then updates ONLY the object on the real `DOM`.
+
+### Feature 2: Unidirectional Data Flow in `ReactJS`
+
+- In `React`, data flow refers to how data is passed between `components`.
+- `React` employs a **one-way data flow** or **unidirectional data flow**. It is sometimes referred to as the **one-way data binding model**.
+- In a **unidirectional data flow**, data flows in a single direction, which is from a parent component down to its child components.
+- In `React`, this is achieved by passing data down through `props` _which are essential properties that can be passed down from a parent component to its child components._. Once a child component receives `props` from its parent, it can use those `props` to render itself.
+- This **unidirectional flow** of data helps to keep the application's data model simple and also makes it easier to debug the application, as changes to data can be easily traced back to their source.
+
+### Feature 3: webpack
+
+- **webpack** is a static module bundler for modern JavaScript applications.
+- webpack build script inside a `package.json` file
+  ```json
+        "scripts": {
+            "build": "webpack --mode production"
+        }
+  ```
+- A webpack loader takes something as the input and produces an output, called bundle.
+
+### Feature 4: Babel
+
+- **Babel** is a JavaScript transpiler that converts edge JavaScript into plain old ES5 JavaScript that can run in any browser (even the old ones).
+
 # Analyzing `React` App Performance
 
 ## Analyzing `React` App Performance: using `React` Developer Tools
