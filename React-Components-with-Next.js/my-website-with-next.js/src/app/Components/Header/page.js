@@ -1,14 +1,16 @@
+import { useState } from 'react';
 import "../../globals.css";
 import "./Header.css";
 
 const Header = () => {
+  const [myFullName, setMyFullName] = useState("Rodgers Nyangweso");
   return (
     <>
       <header>
         <nav className="navbar navbar-expand-md">
           <div className="container">
             <a className="navbar-brand" href="#">
-              Rodgers Nyangweso
+              {myFullName}
             </a>
             <button
               className="navbar-toggler"
