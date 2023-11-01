@@ -19,6 +19,7 @@ const MyApp = () => {
   }, []);
   return (
     <>
+      <Header />
       <BasicButton />
       <DropdownButton />
     </>
