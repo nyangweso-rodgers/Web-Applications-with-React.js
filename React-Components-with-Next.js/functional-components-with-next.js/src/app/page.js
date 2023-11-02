@@ -12,6 +12,7 @@ import CardTemplate from "./Components/Cards/CardTemplate/page.js";
 import ParentComponent from "./Components/ParentComponent/page.js";
 import BasicButton from "./Components/Buttons/BasicButton/page.js";
 import DropdownButton from "./Components/Buttons/DropdownButton/page.js";
+import InputForm from "./Components/Forms/InputForm/page.js";
 
 const MyApp = () => {
   useEffect(() => {
@@ -20,8 +21,7 @@ const MyApp = () => {
   return (
     <>
       <Header />
-      <BasicButton />
-      <DropdownButton />
+      <InputForm />
     </>
   );
 };
